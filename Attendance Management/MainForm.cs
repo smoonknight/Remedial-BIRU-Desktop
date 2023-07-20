@@ -18,17 +18,5 @@ namespace Attendance_Management
         {
             InitializeComponent();
         }
-
-        private async void MainForm_Load(object sender, EventArgs e)
-        {
-        }
-
-        private void overviewButton_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void manageButton_Click(object sender, EventArgs e)
-        {
-        }
     }
 }

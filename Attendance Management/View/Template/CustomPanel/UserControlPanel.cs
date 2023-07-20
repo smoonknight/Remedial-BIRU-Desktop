@@ -17,8 +17,6 @@ namespace Attendance_Management.View.Template.CustomPanel
             Dock = DockStyle.Fill;
         }
 
-
-
         public void SetCurrentUserControl(UserControl userControl)
         {
             Controls.Remove(currentUserControl);
