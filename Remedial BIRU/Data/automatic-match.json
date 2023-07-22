@@ -7,7 +7,6 @@
   "ceiling": [ "plafon" ],
   "totalPayment": [ "total" ],
   "col": [ "col" ],
-  "address": [ "alamat" ],
   "latitude": [ "latitude" ],
   "longitude": [ "longitude" ]
 }

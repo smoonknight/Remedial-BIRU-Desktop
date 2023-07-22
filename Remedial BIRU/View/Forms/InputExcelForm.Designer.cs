@@ -902,6 +902,7 @@ namespace Remedial_BIRU.View.Forms
             this.confirmButton.TabIndex = 0;
             this.confirmButton.Text = "Proses";
             this.confirmButton.UseVisualStyleBackColor = true;
+            this.confirmButton.Click += new System.EventHandler(this.confirmButton_Click);
             // 
             // beautifyPanel4
             // 

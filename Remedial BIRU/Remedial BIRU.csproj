@@ -70,6 +70,12 @@
     <Compile Include="Classes\Controllers\DataTableController.cs" />
     <Compile Include="DataCollections\AutomaticMatchData.cs" />
     <Compile Include="DataCollections\CustomerArrearsData.cs" />
+    <Compile Include="View\Forms\CustomerListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Forms\CustomerListForm.Designer.cs">
+      <DependentUpon>CustomerListForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Forms\InputExcelForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,7 +114,7 @@
     <Compile Include="View\Template\CustomPanel\BeautifyPanel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="View\Template\CustomTableLayoutPanel\EmployeeTableColumnPanel.cs">
+    <Compile Include="View\Template\CustomTableLayoutPanel\CustomerTableColumnPanel.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="View\Template\CustomPanel\LinePanel.cs">
@@ -123,11 +129,11 @@
     <Compile Include="View\Template\CustomTextBox\SearchTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="View\UserControls\EmployeeListUserControl.cs">
+    <Compile Include="View\UserControls\CustomerListUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="View\UserControls\EmployeeListUserControl.Designer.cs">
-      <DependentUpon>EmployeeListUserControl.cs</DependentUpon>
+    <Compile Include="View\UserControls\CustomerListUserControl.Designer.cs">
+      <DependentUpon>CustomerListUserControl.cs</DependentUpon>
     </Compile>
     <Compile Include="View\UserControls\ManageUserControl.cs">
       <SubType>UserControl</SubType>
@@ -154,14 +160,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="View\Forms\CustomerListForm.resx">
+      <DependentUpon>CustomerListForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Forms\EmployeeDescriptionForm.resx">
       <DependentUpon>EmployeeDescriptionForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Forms\InputExcelForm.resx">
       <DependentUpon>InputExcelForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\UserControls\EmployeeListUserControl.resx">
-      <DependentUpon>EmployeeListUserControl.cs</DependentUpon>
+    <EmbeddedResource Include="View\UserControls\CustomerListUserControl.resx">
+      <DependentUpon>CustomerListUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\UserControls\ManageUserControl.resx">
       <DependentUpon>ManageUserControl.cs</DependentUpon>

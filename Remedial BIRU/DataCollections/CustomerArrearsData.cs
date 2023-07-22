@@ -6,17 +6,22 @@ using System.Threading.Tasks;
 
 namespace Remedial_BIRU.DataCollections
 {
-    class CustomerArrearsData
+    public class CustomerArrearsData
     {
-        public string Name { get; set; }
-        public string NoTelp { get; set; }
-        public string Information { get; set; }
-        public string Status { get; set; }
-        public string Ceiling { get; set; }
-        public string TotalPayment { get; set; }
-        public string Col { get; set; }
-        public string Latitude { get; set; }
-        public string Longitude { get; set; }
-        public string Address { get; set; }
+        public string name { get; set; }
+        public string address { get; set; }
+        public string contactNumber { get; set; }
+        public string information { get; set; }
+        public string status { get; set; }
+        public string ceiling { get; set; }
+        public string totalPayment { get; set; }
+        public string col { get; set; }
+        public string latitude { get; set; }
+        public string longitude { get; set; }
+    }
+
+    class CustomerArrearsDataCollection
+    {
+        public static List<CustomerArrearsData> customerArrearsDatas = new List<CustomerArrearsData>();
     }
 }

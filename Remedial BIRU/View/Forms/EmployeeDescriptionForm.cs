@@ -1,4 +1,5 @@
 ﻿using Remedial_BIRU.Classes.Controllers;
+using Remedial_BIRU.DataCollections;
 using Remedial_BIRU.View.Template.CustomPanel;
 using System;
 using System.Collections.Generic;
@@ -15,14 +16,29 @@ namespace Remedial_BIRU.View.Forms
 {
     public partial class EmployeeDescriptionForm : Form
     {
-        public EmployeeDescriptionForm()
+        CustomerArrearsData customerArrearsData;
+        public EmployeeDescriptionForm(CustomerArrearsData data)
         {
             InitializeComponent();
+            customerArrearsData = data;
         }
 
         private void EmployeeDescriptionForm_Load(object sender, EventArgs e)
         {
-
+            if (customerArrearsData == null)
+            {
+                return;
+            }
+            NameCommonLabel.Text = customerArrearsData.name;
+            addressCommonLabel.Text = customerArrearsData.address;
+            contactNumberCommonLabel.Text = customerArrearsData.contactNumber;
+            informationCommonLabel.Text = customerArrearsData.information;
+            statusCommonLabel.Text = customerArrearsData.status;
+            ceilingCommonLabel.Text = customerArrearsData.ceiling;
+            totalPaymentCommonLabel.Text = customerArrearsData.totalPayment;
+            colCommonLabel.Text = customerArrearsData.col;
+            latitudeCommonLabel.Text = customerArrearsData.latitude;
+            longitudeCommonLabel.Text = customerArrearsData.longitude;
         }
     }
 }

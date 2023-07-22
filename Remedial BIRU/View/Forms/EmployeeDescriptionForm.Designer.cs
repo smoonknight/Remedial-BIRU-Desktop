@@ -32,6 +32,7 @@ namespace Remedial_BIRU.View.Forms
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.beautifyPanel1 = new Remedial_BIRU.Template.CustomPanel.BeautifyPanel();
             this.commonLabel1 = new Remedial_BIRU.View.Labels.CommonLabel();
+            this.nameUnderPhotoCommonLabel = new Remedial_BIRU.View.Labels.CommonLabel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.commonLabel4 = new Remedial_BIRU.View.Labels.CommonLabel();
@@ -39,12 +40,12 @@ namespace Remedial_BIRU.View.Forms
             this.beautifyPanel49 = new Remedial_BIRU.Template.CustomPanel.BeautifyPanel();
             this.tableLayoutPanel25 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel26 = new System.Windows.Forms.TableLayoutPanel();
-            this.commonLabel3 = new Remedial_BIRU.View.Labels.CommonLabel();
+            this.longitudeCommonLabel = new Remedial_BIRU.View.Labels.CommonLabel();
             this.Longtitude = new Remedial_BIRU.View.Labels.CommonLabel();
             this.beautifyPanel48 = new Remedial_BIRU.Template.CustomPanel.BeautifyPanel();
             this.tableLayoutPanel23 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel24 = new System.Windows.Forms.TableLayoutPanel();
-            this.commonLabel60 = new Remedial_BIRU.View.Labels.CommonLabel();
+            this.statusCommonLabel = new Remedial_BIRU.View.Labels.CommonLabel();
             this.commonLabel59 = new Remedial_BIRU.View.Labels.CommonLabel();
             this.beautifyPanel47 = new Remedial_BIRU.Template.CustomPanel.BeautifyPanel();
             this.tableLayoutPanel21 = new System.Windows.Forms.TableLayoutPanel();
@@ -86,7 +87,6 @@ namespace Remedial_BIRU.View.Forms
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.NameCommonLabel = new Remedial_BIRU.View.Labels.CommonLabel();
             this.commonLabel42 = new Remedial_BIRU.View.Labels.CommonLabel();
-            this.nameUnderPhotoCommonLabel = new Remedial_BIRU.View.Labels.CommonLabel();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -166,6 +166,17 @@ namespace Remedial_BIRU.View.Forms
             this.commonLabel1.TabIndex = 1;
             this.commonLabel1.Text = "FOTO PEGAWAI";
             this.commonLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // nameUnderPhotoCommonLabel
+            // 
+            this.nameUnderPhotoCommonLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.nameUnderPhotoCommonLabel.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameUnderPhotoCommonLabel.Location = new System.Drawing.Point(3, 225);
+            this.nameUnderPhotoCommonLabel.Name = "nameUnderPhotoCommonLabel";
+            this.nameUnderPhotoCommonLabel.Size = new System.Drawing.Size(244, 25);
+            this.nameUnderPhotoCommonLabel.TabIndex = 2;
+            this.nameUnderPhotoCommonLabel.Text = "Satria Candra Winata";
+            this.nameUnderPhotoCommonLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel1
             // 
@@ -273,7 +284,7 @@ namespace Remedial_BIRU.View.Forms
             // 
             this.tableLayoutPanel26.ColumnCount = 1;
             this.tableLayoutPanel26.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel26.Controls.Add(this.commonLabel3, 0, 1);
+            this.tableLayoutPanel26.Controls.Add(this.longitudeCommonLabel, 0, 1);
             this.tableLayoutPanel26.Controls.Add(this.Longtitude, 0, 0);
             this.tableLayoutPanel26.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel26.Location = new System.Drawing.Point(3, 3);
@@ -284,15 +295,15 @@ namespace Remedial_BIRU.View.Forms
             this.tableLayoutPanel26.Size = new System.Drawing.Size(213, 38);
             this.tableLayoutPanel26.TabIndex = 0;
             // 
-            // commonLabel3
+            // longitudeCommonLabel
             // 
-            this.commonLabel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.commonLabel3.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.commonLabel3.Location = new System.Drawing.Point(3, 19);
-            this.commonLabel3.Name = "commonLabel3";
-            this.commonLabel3.Size = new System.Drawing.Size(207, 19);
-            this.commonLabel3.TabIndex = 2;
-            this.commonLabel3.Text = "212222043";
+            this.longitudeCommonLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.longitudeCommonLabel.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.longitudeCommonLabel.Location = new System.Drawing.Point(3, 19);
+            this.longitudeCommonLabel.Name = "longitudeCommonLabel";
+            this.longitudeCommonLabel.Size = new System.Drawing.Size(207, 19);
+            this.longitudeCommonLabel.TabIndex = 2;
+            this.longitudeCommonLabel.Text = "212222043";
             // 
             // Longtitude
             // 
@@ -335,7 +346,7 @@ namespace Remedial_BIRU.View.Forms
             // 
             this.tableLayoutPanel24.ColumnCount = 1;
             this.tableLayoutPanel24.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel24.Controls.Add(this.commonLabel60, 0, 1);
+            this.tableLayoutPanel24.Controls.Add(this.statusCommonLabel, 0, 1);
             this.tableLayoutPanel24.Controls.Add(this.commonLabel59, 0, 0);
             this.tableLayoutPanel24.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel24.Location = new System.Drawing.Point(3, 3);
@@ -346,15 +357,15 @@ namespace Remedial_BIRU.View.Forms
             this.tableLayoutPanel24.Size = new System.Drawing.Size(213, 38);
             this.tableLayoutPanel24.TabIndex = 0;
             // 
-            // commonLabel60
+            // statusCommonLabel
             // 
-            this.commonLabel60.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.commonLabel60.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.commonLabel60.Location = new System.Drawing.Point(3, 19);
-            this.commonLabel60.Name = "commonLabel60";
-            this.commonLabel60.Size = new System.Drawing.Size(207, 19);
-            this.commonLabel60.TabIndex = 2;
-            this.commonLabel60.Text = "Belum dikunjungi";
+            this.statusCommonLabel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.statusCommonLabel.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statusCommonLabel.Location = new System.Drawing.Point(3, 19);
+            this.statusCommonLabel.Name = "statusCommonLabel";
+            this.statusCommonLabel.Size = new System.Drawing.Size(207, 19);
+            this.statusCommonLabel.TabIndex = 2;
+            this.statusCommonLabel.Text = "Belum dikunjungi";
             // 
             // commonLabel59
             // 
@@ -862,17 +873,6 @@ namespace Remedial_BIRU.View.Forms
             this.commonLabel42.TabIndex = 0;
             this.commonLabel42.Text = "Nama";
             // 
-            // nameUnderPhotoCommonLabel
-            // 
-            this.nameUnderPhotoCommonLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.nameUnderPhotoCommonLabel.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nameUnderPhotoCommonLabel.Location = new System.Drawing.Point(3, 225);
-            this.nameUnderPhotoCommonLabel.Name = "nameUnderPhotoCommonLabel";
-            this.nameUnderPhotoCommonLabel.Size = new System.Drawing.Size(244, 25);
-            this.nameUnderPhotoCommonLabel.TabIndex = 2;
-            this.nameUnderPhotoCommonLabel.Text = "Satria Candra Winata";
-            this.nameUnderPhotoCommonLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // EmployeeDescriptionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -978,8 +978,8 @@ namespace Remedial_BIRU.View.Forms
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private Labels.CommonLabel NameCommonLabel;
         private Labels.CommonLabel commonLabel42;
-        private Labels.CommonLabel commonLabel60;
-        private Labels.CommonLabel commonLabel3;
+        private Labels.CommonLabel statusCommonLabel;
+        private Labels.CommonLabel longitudeCommonLabel;
         private Labels.CommonLabel nameUnderPhotoCommonLabel;
     }
 }

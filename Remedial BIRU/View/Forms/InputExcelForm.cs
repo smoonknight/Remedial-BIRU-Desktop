@@ -1,5 +1,4 @@
 ﻿using Newtonsoft.Json;
-using OfficeOpenXml;
 using Remedial_BIRU.Classes.Controllers;
 using Remedial_BIRU.DataCollections;
 using System;
@@ -18,6 +17,7 @@ namespace Remedial_BIRU.View.Forms
     public partial class InputExcelForm : Form
     {
         List<string> dataTableList = new List<string>();
+        DataTable dataTable;
 
         struct customerArrearsAndComboBoxes
         {
@@ -41,7 +41,7 @@ namespace Remedial_BIRU.View.Forms
 
         private async void InputExcelForm_Load(object sender, EventArgs e)
         {
-            DataTable dataTable = await DataTableController.ExcelToDataTable(path);
+            dataTable = await DataTableController.ExcelToDataTable(path);
             customerDataGridView.DataSource = dataTable;
 
             foreach (DataColumn dataColumn in dataTable.Columns)
@@ -57,7 +57,7 @@ namespace Remedial_BIRU.View.Forms
         {
             await StartAutomaticMatchData();
         }
-
+         
         private async Task StartAutomaticMatchData()
         {
             string json = File.ReadAllText("Data/automatic-match.json");
@@ -95,6 +95,47 @@ namespace Remedial_BIRU.View.Forms
 
         private void SetComboBoxValue()
         {
+            List<ComboBox> comboBoxes = addComboBoxUsage();
+
+            foreach (ComboBox comboBox in comboBoxes)
+            {
+                comboBox.Items.Clear();
+                comboBox.Items.AddRange(dataTableList.ToArray());
+                comboBox.SelectedIndex = 0;
+            }
+        }
+
+        private void resetButton_Click(object sender, EventArgs e)
+        {
+            SetComboBoxValue();
+        }
+
+        private void confirmButton_Click(object sender, EventArgs e)
+        {
+            CustomerArrearsDataCollection.customerArrearsDatas.Clear();
+            foreach (DataRow data in dataTable.Rows)
+            {
+                CustomerArrearsData customerArrearsData = new CustomerArrearsData();
+                customerArrearsData.name = data[nameComboBox.Text].ToString();
+                customerArrearsData.address = data[addressComboBox.Text].ToString();
+                customerArrearsData.contactNumber = data[contactNumberComboBox.Text].ToString();
+                customerArrearsData.information = data[informationComboBox.Text].ToString();
+                customerArrearsData.status = data[statusComboBox.Text].ToString();
+                customerArrearsData.ceiling = data[ceilingComboBox.Text].ToString();
+                customerArrearsData.totalPayment = data[totalPaymentComboBox.Text].ToString();
+                customerArrearsData.col = data[colComboBox.Text].ToString();
+                customerArrearsData.latitude = data[latitudeComboBox.Text].ToString();
+                customerArrearsData.longitude = data[longitudeComboBox.Text].ToString();
+
+                CustomerArrearsDataCollection.customerArrearsDatas.Add(customerArrearsData);
+            }
+
+            Form form = new CustomerListForm();
+            form.Show();
+        }
+
+        private List<ComboBox> addComboBoxUsage()
+        {
             List<ComboBox> comboBoxes = new List<ComboBox>()
             {
                 nameComboBox,
@@ -109,17 +150,7 @@ namespace Remedial_BIRU.View.Forms
                 longitudeComboBox
             };
 
-            foreach (ComboBox comboBox in comboBoxes)
-            {
-                comboBox.Items.Clear();
-                comboBox.Items.AddRange(dataTableList.ToArray());
-                comboBox.SelectedIndex = 0;
-            }
-        }
-
-        private void resetButton_Click(object sender, EventArgs e)
-        {
-            SetComboBoxValue();
+            return comboBoxes;
         }
     }
 }

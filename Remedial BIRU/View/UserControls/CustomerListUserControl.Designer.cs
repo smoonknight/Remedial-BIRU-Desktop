@@ -1,7 +1,7 @@
 ﻿
 namespace Remedial_BIRU.View.UserControls
 {
-    partial class EmployeeListUserControl
+    partial class CustomerListUserControl
     {
         /// <summary> 
         /// Required designer variable.
@@ -32,7 +32,6 @@ namespace Remedial_BIRU.View.UserControls
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.beautifyPanel2 = new Remedial_BIRU.Template.CustomPanel.BeautifyPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -96,7 +95,6 @@ namespace Remedial_BIRU.View.UserControls
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 275F));
-            this.tableLayoutPanel2.Controls.Add(this.comboBox1, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.panel2, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
@@ -105,20 +103,6 @@ namespace Remedial_BIRU.View.UserControls
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(834, 60);
             this.tableLayoutPanel2.TabIndex = 0;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.BackColor = System.Drawing.Color.White;
-            this.comboBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(579, 15);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(20, 15, 20, 20);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(235, 28);
-            this.comboBox1.TabIndex = 3;
             // 
             // panel2
             // 
@@ -207,12 +191,12 @@ namespace Remedial_BIRU.View.UserControls
             // tableLayoutPanel5
             // 
             this.tableLayoutPanel5.ColumnCount = 6;
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.00919F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.00919F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 21.01452F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.0062F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.63093F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.32999F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel5.Controls.Add(this.commonLabel6, 4, 0);
             this.tableLayoutPanel5.Controls.Add(this.commonLabel5, 3, 0);
             this.tableLayoutPanel5.Controls.Add(this.commonLabel4, 2, 0);
@@ -230,22 +214,22 @@ namespace Remedial_BIRU.View.UserControls
             // 
             this.commonLabel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.commonLabel6.Font = new System.Drawing.Font("Century", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.commonLabel6.Location = new System.Drawing.Point(553, 0);
+            this.commonLabel6.Location = new System.Drawing.Point(544, 0);
             this.commonLabel6.Name = "commonLabel6";
-            this.commonLabel6.Size = new System.Drawing.Size(141, 40);
+            this.commonLabel6.Size = new System.Drawing.Size(119, 40);
             this.commonLabel6.TabIndex = 8;
-            this.commonLabel6.Text = "Status Karyawan";
+            this.commonLabel6.Text = "Col";
             this.commonLabel6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // commonLabel5
             // 
             this.commonLabel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.commonLabel5.Font = new System.Drawing.Font("Century", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.commonLabel5.Location = new System.Drawing.Point(428, 0);
+            this.commonLabel5.Location = new System.Drawing.Point(419, 0);
             this.commonLabel5.Name = "commonLabel5";
             this.commonLabel5.Size = new System.Drawing.Size(119, 40);
             this.commonLabel5.TabIndex = 7;
-            this.commonLabel5.Text = "Departemen";
+            this.commonLabel5.Text = "Total Biaya";
             this.commonLabel5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // commonLabel4
@@ -254,9 +238,9 @@ namespace Remedial_BIRU.View.UserControls
             this.commonLabel4.Font = new System.Drawing.Font("Century", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.commonLabel4.Location = new System.Drawing.Point(253, 0);
             this.commonLabel4.Name = "commonLabel4";
-            this.commonLabel4.Size = new System.Drawing.Size(169, 40);
+            this.commonLabel4.Size = new System.Drawing.Size(160, 40);
             this.commonLabel4.TabIndex = 6;
-            this.commonLabel4.Text = "Posisi Pekerjaan";
+            this.commonLabel4.Text = "Nomor Kontak";
             this.commonLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // commonLabel2
@@ -267,7 +251,7 @@ namespace Remedial_BIRU.View.UserControls
             this.commonLabel2.Name = "commonLabel2";
             this.commonLabel2.Size = new System.Drawing.Size(119, 40);
             this.commonLabel2.TabIndex = 1;
-            this.commonLabel2.Text = "Nomor Kontak";
+            this.commonLabel2.Text = "Alamat";
             this.commonLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // commonLabel1
@@ -303,41 +287,18 @@ namespace Remedial_BIRU.View.UserControls
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 24;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel4.RowCount = 1;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(834, 376);
             this.tableLayoutPanel4.TabIndex = 0;
             // 
-            // EmployeeListUserControl
+            // CustomerListUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(230)))), ((int)(((byte)(233)))));
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Name = "EmployeeListUserControl";
+            this.Name = "CustomerListUserControl";
             this.Size = new System.Drawing.Size(900, 556);
             this.Load += new System.EventHandler(this.EmployeeListUserControl_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -360,7 +321,6 @@ namespace Remedial_BIRU.View.UserControls
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private Remedial_BIRU.Template.CustomPanel.BeautifyPanel beautifyPanel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.PictureBox pictureBox1;
