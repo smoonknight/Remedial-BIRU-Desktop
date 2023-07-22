@@ -1,4 +1,4 @@
-﻿using Attendance_Management.View.UserControls;
+﻿using Remedial_BIRU.View.UserControls;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Attendance_Management.View.Template.CustomPanel
+namespace Remedial_BIRU.View.Template.CustomPanel
 {
     class UserControlPanel : Panel
     {

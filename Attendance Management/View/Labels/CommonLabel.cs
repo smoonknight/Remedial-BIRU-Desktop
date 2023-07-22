@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace Attendance_Management.View.Labels
+namespace Remedial_BIRU.View.Labels
 {
     class CommonLabel : Label
     {

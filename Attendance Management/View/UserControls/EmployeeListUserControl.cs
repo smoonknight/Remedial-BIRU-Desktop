@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Attendance_Management.View.Template.CustomTableLayoutPanel;
+using Remedial_BIRU.View.Template.CustomTableLayoutPanel;
 
-namespace Attendance_Management.View.UserControls
+namespace Remedial_BIRU.View.UserControls
 {
     public partial class EmployeeListUserControl : UserControl
     {

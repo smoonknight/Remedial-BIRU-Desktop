@@ -7,7 +7,7 @@ using System.Windows.Forms;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 
-namespace Attendance_Management.Template.CustomPanel
+namespace Remedial_BIRU.Template.CustomPanel
 {
     class BeautifyPanel : Panel
     {

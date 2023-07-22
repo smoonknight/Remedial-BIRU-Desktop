@@ -1,5 +1,5 @@
 ﻿
-namespace Attendance_Management.View.UserControls
+namespace Remedial_BIRU.View.UserControls
 {
     partial class OverviewUserControl
     {
@@ -35,50 +35,50 @@ namespace Attendance_Management.View.UserControls
             this.panel17 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
-            this.beautifyPanel1 = new Attendance_Management.Template.CustomPanel.BeautifyPanel();
+            this.beautifyPanel1 = new Remedial_BIRU.Template.CustomPanel.BeautifyPanel();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.commonLabel7 = new Attendance_Management.View.Labels.CommonLabel();
-            this.commonLabel8 = new Attendance_Management.View.Labels.CommonLabel();
+            this.commonLabel7 = new Remedial_BIRU.View.Labels.CommonLabel();
+            this.commonLabel8 = new Remedial_BIRU.View.Labels.CommonLabel();
             this.panel18 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
-            this.beautifyPanel2 = new Attendance_Management.Template.CustomPanel.BeautifyPanel();
+            this.beautifyPanel2 = new Remedial_BIRU.Template.CustomPanel.BeautifyPanel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.commonLabel5 = new Attendance_Management.View.Labels.CommonLabel();
-            this.commonLabel6 = new Attendance_Management.View.Labels.CommonLabel();
+            this.commonLabel5 = new Remedial_BIRU.View.Labels.CommonLabel();
+            this.commonLabel6 = new Remedial_BIRU.View.Labels.CommonLabel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
-            this.beautifyPanel3 = new Attendance_Management.Template.CustomPanel.BeautifyPanel();
+            this.beautifyPanel3 = new Remedial_BIRU.Template.CustomPanel.BeautifyPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.button2 = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.commonLabel2 = new Attendance_Management.View.Labels.CommonLabel();
-            this.commonLabel1 = new Attendance_Management.View.Labels.CommonLabel();
+            this.commonLabel2 = new Remedial_BIRU.View.Labels.CommonLabel();
+            this.commonLabel1 = new Remedial_BIRU.View.Labels.CommonLabel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.beautifyPanel4 = new Attendance_Management.Template.CustomPanel.BeautifyPanel();
+            this.beautifyPanel4 = new Remedial_BIRU.Template.CustomPanel.BeautifyPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.commonLabel3 = new Attendance_Management.View.Labels.CommonLabel();
-            this.commonLabel4 = new Attendance_Management.View.Labels.CommonLabel();
+            this.commonLabel3 = new Remedial_BIRU.View.Labels.CommonLabel();
+            this.commonLabel4 = new Remedial_BIRU.View.Labels.CommonLabel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
             this.panel16 = new System.Windows.Forms.Panel();
-            this.commonLabel12 = new Attendance_Management.View.Labels.CommonLabel();
-            this.commonLabel11 = new Attendance_Management.View.Labels.CommonLabel();
+            this.commonLabel12 = new Remedial_BIRU.View.Labels.CommonLabel();
+            this.commonLabel11 = new Remedial_BIRU.View.Labels.CommonLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.beautifyPanel5 = new Attendance_Management.Template.CustomPanel.BeautifyPanel();
-            this.commonLabel10 = new Attendance_Management.View.Labels.CommonLabel();
-            this.beautifyPanel6 = new Attendance_Management.Template.CustomPanel.BeautifyPanel();
+            this.beautifyPanel5 = new Remedial_BIRU.Template.CustomPanel.BeautifyPanel();
+            this.commonLabel10 = new Remedial_BIRU.View.Labels.CommonLabel();
+            this.beautifyPanel6 = new Remedial_BIRU.Template.CustomPanel.BeautifyPanel();
             this.panel15 = new System.Windows.Forms.Panel();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.commonLabel9 = new Attendance_Management.View.Labels.CommonLabel();
+            this.commonLabel9 = new Remedial_BIRU.View.Labels.CommonLabel();
             this.panel17.SuspendLayout();
             this.tableLayoutPanel10.SuspendLayout();
             this.tableLayoutPanel11.SuspendLayout();
@@ -229,7 +229,7 @@ namespace Attendance_Management.View.UserControls
             // panel18
             // 
             this.panel18.BackColor = System.Drawing.Color.White;
-            this.panel18.BackgroundImage = global::Attendance_Management.Properties.Resources.late;
+            this.panel18.BackgroundImage = global::Remedial_BIRU.Properties.Resources.late;
             this.panel18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel18.Location = new System.Drawing.Point(3, 3);
@@ -329,7 +329,7 @@ namespace Attendance_Management.View.UserControls
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.Color.White;
-            this.panel11.BackgroundImage = global::Attendance_Management.Properties.Resources.absence;
+            this.panel11.BackgroundImage = global::Remedial_BIRU.Properties.Resources.absence;
             this.panel11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel11.Location = new System.Drawing.Point(3, 3);
@@ -443,7 +443,7 @@ namespace Attendance_Management.View.UserControls
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.White;
-            this.panel6.BackgroundImage = global::Attendance_Management.Properties.Resources.check;
+            this.panel6.BackgroundImage = global::Remedial_BIRU.Properties.Resources.check;
             this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(3, 3);
@@ -529,7 +529,7 @@ namespace Attendance_Management.View.UserControls
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.White;
-            this.panel9.BackgroundImage = global::Attendance_Management.Properties.Resources.employees;
+            this.panel9.BackgroundImage = global::Remedial_BIRU.Properties.Resources.employees;
             this.panel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel9.Location = new System.Drawing.Point(3, 3);
@@ -604,7 +604,7 @@ namespace Attendance_Management.View.UserControls
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::Attendance_Management.Properties.Resources.absence;
+            this.pictureBox1.Image = global::Remedial_BIRU.Properties.Resources.absence;
             this.pictureBox1.Location = new System.Drawing.Point(3, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(44, 44);
@@ -747,7 +747,7 @@ namespace Attendance_Management.View.UserControls
         private System.Windows.Forms.Panel panel17;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel11;
-        private Attendance_Management.Template.CustomPanel.BeautifyPanel beautifyPanel1;
+        private Remedial_BIRU.Template.CustomPanel.BeautifyPanel beautifyPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
         private System.Windows.Forms.Panel panel13;
@@ -755,7 +755,7 @@ namespace Attendance_Management.View.UserControls
         private Labels.CommonLabel commonLabel8;
         private System.Windows.Forms.Panel panel18;
         private System.Windows.Forms.Button button4;
-        private Attendance_Management.Template.CustomPanel.BeautifyPanel beautifyPanel2;
+        private Remedial_BIRU.Template.CustomPanel.BeautifyPanel beautifyPanel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
         private System.Windows.Forms.Panel panel10;
@@ -763,7 +763,7 @@ namespace Attendance_Management.View.UserControls
         private Labels.CommonLabel commonLabel6;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Button button3;
-        private Attendance_Management.Template.CustomPanel.BeautifyPanel beautifyPanel3;
+        private Remedial_BIRU.Template.CustomPanel.BeautifyPanel beautifyPanel3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
@@ -771,7 +771,7 @@ namespace Attendance_Management.View.UserControls
         private Labels.CommonLabel commonLabel2;
         private Labels.CommonLabel commonLabel1;
         private System.Windows.Forms.Panel panel6;
-        private Attendance_Management.Template.CustomPanel.BeautifyPanel beautifyPanel4;
+        private Remedial_BIRU.Template.CustomPanel.BeautifyPanel beautifyPanel4;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.Panel panel8;
@@ -779,9 +779,9 @@ namespace Attendance_Management.View.UserControls
         private Labels.CommonLabel commonLabel4;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Button button1;
-        private Attendance_Management.Template.CustomPanel.BeautifyPanel beautifyPanel5;
+        private Remedial_BIRU.Template.CustomPanel.BeautifyPanel beautifyPanel5;
         private Labels.CommonLabel commonLabel10;
-        private Attendance_Management.Template.CustomPanel.BeautifyPanel beautifyPanel6;
+        private Remedial_BIRU.Template.CustomPanel.BeautifyPanel beautifyPanel6;
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private Labels.CommonLabel commonLabel9;

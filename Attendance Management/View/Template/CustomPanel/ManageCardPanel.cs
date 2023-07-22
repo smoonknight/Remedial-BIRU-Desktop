@@ -5,12 +5,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Attendance_Management.Classes.CustomColor;
-using Attendance_Management.Properties;
-using Attendance_Management.View.Labels;
-using Attendance_Management.Template.CustomPanel;
+using Remedial_BIRU.Classes.CustomColor;
+using Remedial_BIRU.Properties;
+using Remedial_BIRU.View.Labels;
+using Remedial_BIRU.Template.CustomPanel;
 
-namespace Attendance_Management.View.Template.CustomPanel
+namespace Remedial_BIRU.View.Template.CustomPanel
 {
     class ManageCardPanel : BeautifyPanel
     {

@@ -1,5 +1,5 @@
-﻿using Attendance_Management.Classes.CustomColor;
-using Attendance_Management.Template.CustomPanel;
+﻿using Remedial_BIRU.Classes.CustomColor;
+using Remedial_BIRU.Template.CustomPanel;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Attendance_Management.View.Template.CustomPanel
+namespace Remedial_BIRU.View.Template.CustomPanel
 {
     class AttendanceDateBoxPanel : BeautifyPanel
     {

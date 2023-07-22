@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Attendance_Management.Classes.WebService
+namespace Remedial_BIRU.Classes.WebService
 {
     class ApiWebService
     {

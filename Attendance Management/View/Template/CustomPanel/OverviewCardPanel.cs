@@ -1,4 +1,4 @@
-﻿using Attendance_Management.View.Labels;
+﻿using Remedial_BIRU.View.Labels;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Attendance_Management.View.Template.CustomPanel
+namespace Remedial_BIRU.View.Template.CustomPanel
 {
     class OverviewCardPanel : Panel
     {

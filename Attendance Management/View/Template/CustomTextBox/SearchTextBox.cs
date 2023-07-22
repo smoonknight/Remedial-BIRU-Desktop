@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Attendance_Management.View.Template.CustomTextBox
+namespace Remedial_BIRU.View.Template.CustomTextBox
 {
     class SearchTextBox : TextBox
     {

@@ -1,5 +1,5 @@
-﻿using Attendance_Management.Classes.Controllers;
-using Attendance_Management.View.UserControls;
+﻿using Remedial_BIRU.View.Forms;
+using Remedial_BIRU.View.UserControls;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,13 +10,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Attendance_Management
+namespace Remedial_BIRU
 {
     public partial class MainForm : Form
     {
         public MainForm()
         {
             InitializeComponent();
+        }
+
+        private void inputDataExcelButton_Click(object sender, EventArgs e)
+        {
+            Form form = new InputExcelForm();
+            form.Show();
         }
     }
 }

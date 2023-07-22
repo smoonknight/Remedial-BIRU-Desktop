@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Attendance_Management.View.Template.CustomPanel
+namespace Remedial_BIRU.View.Template.CustomPanel
 {
     public class LinePanel : Panel
     {

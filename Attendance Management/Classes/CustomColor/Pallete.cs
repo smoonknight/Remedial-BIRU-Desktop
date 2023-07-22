@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Attendance_Management.Classes.CustomColor
+namespace Remedial_BIRU.Classes.CustomColor
 {
     public class Pallete
     {

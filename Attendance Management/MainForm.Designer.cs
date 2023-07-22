@@ -1,5 +1,5 @@
 ﻿
-namespace Attendance_Management
+namespace Remedial_BIRU
 {
     partial class MainForm
     {
@@ -29,243 +29,275 @@ namespace Attendance_Management
         /// </summary>
         private void InitializeComponent()
         {
-            this.headerPanel = new System.Windows.Forms.Panel();
-            this.headerTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
-            this.button4 = new System.Windows.Forms.Button();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.inputDataExcelButton = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.profileTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.adminNameLabel = new System.Windows.Forms.Label();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.overviewUserControl1 = new Attendance_Management.View.UserControls.OverviewUserControl();
-            this.manageUserControl1 = new Attendance_Management.View.UserControls.ManageUserControl();
-            this.employeeListUserControl1 = new Attendance_Management.View.UserControls.EmployeeListUserControl();
-            this.headerPanel.SuspendLayout();
-            this.headerTableLayoutPanel.SuspendLayout();
-            this.profileTableLayoutPanel.SuspendLayout();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
+            this.tableLayoutPanel5.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // headerPanel
+            // tableLayoutPanel1
             // 
-            this.headerPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(132)))), ((int)(((byte)(227)))));
-            this.headerPanel.Controls.Add(this.headerTableLayoutPanel);
-            this.headerPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.headerPanel.ForeColor = System.Drawing.Color.White;
-            this.headerPanel.Location = new System.Drawing.Point(0, 0);
-            this.headerPanel.Margin = new System.Windows.Forms.Padding(0);
-            this.headerPanel.Name = "headerPanel";
-            this.headerPanel.Size = new System.Drawing.Size(909, 44);
-            this.headerPanel.TabIndex = 1;
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 300F));
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel4, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(909, 561);
+            this.tableLayoutPanel1.TabIndex = 1;
             // 
-            // headerTableLayoutPanel
+            // tableLayoutPanel4
             // 
-            this.headerTableLayoutPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(25)))), ((int)(((byte)(39)))));
-            this.headerTableLayoutPanel.ColumnCount = 10;
-            this.headerTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
-            this.headerTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 70F));
-            this.headerTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 70F));
-            this.headerTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 120F));
-            this.headerTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 90F));
-            this.headerTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.headerTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 120F));
-            this.headerTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.headerTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.headerTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200F));
-            this.headerTableLayoutPanel.Controls.Add(this.button4, 4, 0);
-            this.headerTableLayoutPanel.Controls.Add(this.button3, 3, 0);
-            this.headerTableLayoutPanel.Controls.Add(this.button2, 2, 0);
-            this.headerTableLayoutPanel.Controls.Add(this.label1, 0, 0);
-            this.headerTableLayoutPanel.Controls.Add(this.profileTableLayoutPanel, 9, 0);
-            this.headerTableLayoutPanel.Controls.Add(this.button1, 1, 0);
-            this.headerTableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.headerTableLayoutPanel.Location = new System.Drawing.Point(0, 0);
-            this.headerTableLayoutPanel.Name = "headerTableLayoutPanel";
-            this.headerTableLayoutPanel.RowCount = 1;
-            this.headerTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.headerTableLayoutPanel.Size = new System.Drawing.Size(909, 44);
-            this.headerTableLayoutPanel.TabIndex = 4;
+            this.tableLayoutPanel4.ColumnCount = 1;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel4.Controls.Add(this.label4, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.tableLayoutPanel5, 0, 2);
+            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(612, 3);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 3;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 70F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(294, 555);
+            this.tableLayoutPanel4.TabIndex = 1;
             // 
-            // button4
+            // label4
             // 
-            this.button4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Century", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(360, 0);
-            this.button4.Margin = new System.Windows.Forms.Padding(0);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(90, 44);
-            this.button4.TabIndex = 9;
-            this.button4.Text = "Reports";
-            this.button4.UseVisualStyleBackColor = true;
+            this.label4.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(3, 70);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(288, 40);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Memulai";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // tableLayoutPanel5
+            // 
+            this.tableLayoutPanel5.ColumnCount = 1;
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel5.Controls.Add(this.inputDataExcelButton, 0, 0);
+            this.tableLayoutPanel5.Controls.Add(this.button3, 0, 1);
+            this.tableLayoutPanel5.Controls.Add(this.button4, 0, 2);
+            this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 113);
+            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
+            this.tableLayoutPanel5.RowCount = 4;
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(288, 439);
+            this.tableLayoutPanel5.TabIndex = 4;
+            // 
+            // inputDataExcelButton
+            // 
+            this.inputDataExcelButton.BackColor = System.Drawing.Color.White;
+            this.inputDataExcelButton.FlatAppearance.BorderSize = 0;
+            this.inputDataExcelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.inputDataExcelButton.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputDataExcelButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(25)))), ((int)(((byte)(39)))));
+            this.inputDataExcelButton.Location = new System.Drawing.Point(3, 3);
+            this.inputDataExcelButton.Margin = new System.Windows.Forms.Padding(3, 3, 40, 3);
+            this.inputDataExcelButton.Name = "inputDataExcelButton";
+            this.inputDataExcelButton.Size = new System.Drawing.Size(245, 44);
+            this.inputDataExcelButton.TabIndex = 5;
+            this.inputDataExcelButton.Text = "Input data excel";
+            this.inputDataExcelButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.inputDataExcelButton.UseVisualStyleBackColor = false;
+            this.inputDataExcelButton.Click += new System.EventHandler(this.inputDataExcelButton_Click);
             // 
             // button3
             // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button3.BackColor = System.Drawing.Color.White;
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Century", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(240, 0);
-            this.button3.Margin = new System.Windows.Forms.Padding(0);
+            this.button3.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(25)))), ((int)(((byte)(39)))));
+            this.button3.Location = new System.Drawing.Point(3, 53);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 3, 40, 3);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(120, 44);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "Employee\'s List";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Size = new System.Drawing.Size(245, 44);
+            this.button3.TabIndex = 6;
+            this.button3.Text = "Buka data yang tersimpan";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // button4
             // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(170, 0);
-            this.button2.Margin = new System.Windows.Forms.Padding(0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(70, 44);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Manage";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button4.BackColor = System.Drawing.Color.White;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(25)))), ((int)(((byte)(39)))));
+            this.button4.Location = new System.Drawing.Point(3, 103);
+            this.button4.Margin = new System.Windows.Forms.Padding(3, 3, 40, 3);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(245, 44);
+            this.button4.TabIndex = 7;
+            this.button4.Text = "Buat data baru";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 1;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.Controls.Add(this.label1, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel3, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.flowLayoutPanel1, 0, 2);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 3;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 70F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(603, 555);
+            this.tableLayoutPanel2.TabIndex = 0;
             // 
             // label1
             // 
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label1.Font = new System.Drawing.Font("Century", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 44);
+            this.label1.Size = new System.Drawing.Size(357, 70);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Attendance Management";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Text = "Remedial Biru";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // profileTableLayoutPanel
+            // tableLayoutPanel3
             // 
-            this.profileTableLayoutPanel.ColumnCount = 3;
-            this.profileTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 41F));
-            this.profileTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 129F));
-            this.profileTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.profileTableLayoutPanel.Controls.Add(this.label5, 2, 0);
-            this.profileTableLayoutPanel.Controls.Add(this.adminNameLabel, 1, 0);
-            this.profileTableLayoutPanel.Controls.Add(this.panel1, 0, 0);
-            this.profileTableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.profileTableLayoutPanel.Location = new System.Drawing.Point(712, 3);
-            this.profileTableLayoutPanel.Name = "profileTableLayoutPanel";
-            this.profileTableLayoutPanel.RowCount = 1;
-            this.profileTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.profileTableLayoutPanel.Size = new System.Drawing.Size(194, 38);
-            this.profileTableLayoutPanel.TabIndex = 5;
+            this.tableLayoutPanel3.ColumnCount = 1;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.Controls.Add(this.label2, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.panel1, 0, 1);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 73);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 2;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(597, 74);
+            this.tableLayoutPanel3.TabIndex = 1;
             // 
-            // label5
+            // label2
             // 
-            this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(173, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(24, 38);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "V";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // adminNameLabel
-            // 
-            this.adminNameLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.adminNameLabel.Font = new System.Drawing.Font("Century", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.adminNameLabel.Location = new System.Drawing.Point(44, 0);
-            this.adminNameLabel.Name = "adminNameLabel";
-            this.adminNameLabel.Size = new System.Drawing.Size(123, 38);
-            this.adminNameLabel.TabIndex = 3;
-            this.adminNameLabel.Text = "Admin";
-            this.adminNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label2.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(3, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(462, 37);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Riwayat data";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(3, 40);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(35, 32);
-            this.panel1.TabIndex = 0;
+            this.panel1.Size = new System.Drawing.Size(591, 31);
+            this.panel1.TabIndex = 2;
             // 
             // button1
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button1.BackColor = System.Drawing.SystemColors.Window;
+            this.button1.Dock = System.Windows.Forms.DockStyle.Left;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(100, 0);
+            this.button1.Location = new System.Drawing.Point(220, 0);
             this.button1.Margin = new System.Windows.Forms.Padding(0);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(70, 44);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Overview";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Size = new System.Drawing.Size(20, 31);
+            this.button1.TabIndex = 4;
+            this.button1.UseVisualStyleBackColor = false;
             // 
-            // overviewUserControl1
+            // textBox1
             // 
-            this.overviewUserControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(230)))), ((int)(((byte)(233)))));
-            this.overviewUserControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.overviewUserControl1.ForeColor = System.Drawing.Color.Black;
-            this.overviewUserControl1.Location = new System.Drawing.Point(0, 44);
-            this.overviewUserControl1.Margin = new System.Windows.Forms.Padding(0);
-            this.overviewUserControl1.Name = "overviewUserControl1";
-            this.overviewUserControl1.Size = new System.Drawing.Size(909, 517);
-            this.overviewUserControl1.TabIndex = 3;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.textBox1.Font = new System.Drawing.Font("Century", 18.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(0, 0);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(0);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(220, 31);
+            this.textBox1.TabIndex = 3;
             // 
-            // manageUserControl1
+            // flowLayoutPanel1
             // 
-            this.manageUserControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(230)))), ((int)(((byte)(233)))));
-            this.manageUserControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.manageUserControl1.ForeColor = System.Drawing.Color.Black;
-            this.manageUserControl1.Location = new System.Drawing.Point(0, 44);
-            this.manageUserControl1.Name = "manageUserControl1";
-            this.manageUserControl1.Size = new System.Drawing.Size(909, 517);
-            this.manageUserControl1.TabIndex = 4;
-            // 
-            // employeeListUserControl1
-            // 
-            this.employeeListUserControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(230)))), ((int)(((byte)(233)))));
-            this.employeeListUserControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.employeeListUserControl1.ForeColor = System.Drawing.Color.Black;
-            this.employeeListUserControl1.Location = new System.Drawing.Point(0, 44);
-            this.employeeListUserControl1.Name = "employeeListUserControl1";
-            this.employeeListUserControl1.Size = new System.Drawing.Size(909, 517);
-            this.employeeListUserControl1.TabIndex = 5;
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 153);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(597, 399);
+            this.flowLayoutPanel1.TabIndex = 2;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(25)))), ((int)(((byte)(39)))));
             this.ClientSize = new System.Drawing.Size(909, 561);
-            this.Controls.Add(this.employeeListUserControl1);
-            this.Controls.Add(this.manageUserControl1);
-            this.Controls.Add(this.overviewUserControl1);
-            this.Controls.Add(this.headerPanel);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "MainForm";
             this.Text = "Attendance Management";
-            this.headerPanel.ResumeLayout(false);
-            this.headerTableLayoutPanel.ResumeLayout(false);
-            this.profileTableLayoutPanel.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel4.ResumeLayout(false);
+            this.tableLayoutPanel5.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel headerPanel;
-        private System.Windows.Forms.TableLayoutPanel headerTableLayoutPanel;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TableLayoutPanel profileTableLayoutPanel;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label adminNameLabel;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private View.UserControls.OverviewUserControl overviewUserControl1;
-        private View.UserControls.ManageUserControl manageUserControl1;
         private View.UserControls.EmployeeListUserControl employeeListUserControl1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
+        private System.Windows.Forms.Button inputDataExcelButton;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }

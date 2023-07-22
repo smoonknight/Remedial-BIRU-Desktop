@@ -1,5 +1,5 @@
 ﻿
-namespace Attendance_Management.View.UserControls
+namespace Remedial_BIRU.View.UserControls
 {
     partial class EmployeeListUserControl
     {
@@ -30,23 +30,23 @@ namespace Attendance_Management.View.UserControls
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.beautifyPanel2 = new Attendance_Management.Template.CustomPanel.BeautifyPanel();
+            this.beautifyPanel2 = new Remedial_BIRU.Template.CustomPanel.BeautifyPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.searchTextBox1 = new Attendance_Management.View.Template.CustomTextBox.SearchTextBox();
+            this.searchTextBox1 = new Remedial_BIRU.View.Template.CustomTextBox.SearchTextBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.beautifyPanel1 = new Attendance_Management.Template.CustomPanel.BeautifyPanel();
+            this.beautifyPanel1 = new Remedial_BIRU.Template.CustomPanel.BeautifyPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.commonLabel6 = new Attendance_Management.View.Labels.CommonLabel();
-            this.commonLabel5 = new Attendance_Management.View.Labels.CommonLabel();
-            this.commonLabel4 = new Attendance_Management.View.Labels.CommonLabel();
-            this.commonLabel2 = new Attendance_Management.View.Labels.CommonLabel();
-            this.commonLabel1 = new Attendance_Management.View.Labels.CommonLabel();
-            this.beautifyPanel3 = new Attendance_Management.Template.CustomPanel.BeautifyPanel();
+            this.commonLabel6 = new Remedial_BIRU.View.Labels.CommonLabel();
+            this.commonLabel5 = new Remedial_BIRU.View.Labels.CommonLabel();
+            this.commonLabel4 = new Remedial_BIRU.View.Labels.CommonLabel();
+            this.commonLabel2 = new Remedial_BIRU.View.Labels.CommonLabel();
+            this.commonLabel1 = new Remedial_BIRU.View.Labels.CommonLabel();
+            this.beautifyPanel3 = new Remedial_BIRU.Template.CustomPanel.BeautifyPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1.SuspendLayout();
             this.beautifyPanel2.SuspendLayout();
@@ -358,7 +358,7 @@ namespace Attendance_Management.View.UserControls
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private Attendance_Management.Template.CustomPanel.BeautifyPanel beautifyPanel2;
+        private Remedial_BIRU.Template.CustomPanel.BeautifyPanel beautifyPanel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Panel panel2;
@@ -366,9 +366,9 @@ namespace Attendance_Management.View.UserControls
         private System.Windows.Forms.PictureBox pictureBox1;
         private Template.CustomTextBox.SearchTextBox searchTextBox1;
         private System.Windows.Forms.Panel panel3;
-        private Attendance_Management.Template.CustomPanel.BeautifyPanel beautifyPanel1;
+        private Remedial_BIRU.Template.CustomPanel.BeautifyPanel beautifyPanel1;
         private System.Windows.Forms.Panel panel1;
-        private Attendance_Management.Template.CustomPanel.BeautifyPanel beautifyPanel3;
+        private Remedial_BIRU.Template.CustomPanel.BeautifyPanel beautifyPanel3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private Labels.CommonLabel commonLabel6;
         private Labels.CommonLabel commonLabel5;

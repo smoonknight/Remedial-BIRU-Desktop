@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Attendance_Management.View.UserControls
+namespace Remedial_BIRU.View.UserControls
 {
     public partial class OverviewUserControl : UserControl
     {

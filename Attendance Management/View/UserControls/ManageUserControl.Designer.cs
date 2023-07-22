@@ -1,5 +1,5 @@
 ﻿
-namespace Attendance_Management.View.UserControls
+namespace Remedial_BIRU.View.UserControls
 {
     partial class ManageUserControl
     {
@@ -29,23 +29,23 @@ namespace Attendance_Management.View.UserControls
         /// </summary>
         private void InitializeComponent()
         {
-            this.beautifyPanel1 = new Attendance_Management.Template.CustomPanel.BeautifyPanel();
+            this.beautifyPanel1 = new Remedial_BIRU.Template.CustomPanel.BeautifyPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.manageCardPanel1 = new Attendance_Management.View.Template.CustomPanel.ManageCardPanel();
-            this.manageCardPanel2 = new Attendance_Management.View.Template.CustomPanel.ManageCardPanel();
-            this.manageCardPanel3 = new Attendance_Management.View.Template.CustomPanel.ManageCardPanel();
-            this.manageCardPanel4 = new Attendance_Management.View.Template.CustomPanel.ManageCardPanel();
-            this.manageCardPanel5 = new Attendance_Management.View.Template.CustomPanel.ManageCardPanel();
-            this.manageCardPanel6 = new Attendance_Management.View.Template.CustomPanel.ManageCardPanel();
+            this.manageCardPanel1 = new Remedial_BIRU.View.Template.CustomPanel.ManageCardPanel();
+            this.manageCardPanel2 = new Remedial_BIRU.View.Template.CustomPanel.ManageCardPanel();
+            this.manageCardPanel3 = new Remedial_BIRU.View.Template.CustomPanel.ManageCardPanel();
+            this.manageCardPanel4 = new Remedial_BIRU.View.Template.CustomPanel.ManageCardPanel();
+            this.manageCardPanel5 = new Remedial_BIRU.View.Template.CustomPanel.ManageCardPanel();
+            this.manageCardPanel6 = new Remedial_BIRU.View.Template.CustomPanel.ManageCardPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.beautifyPanel2 = new Attendance_Management.Template.CustomPanel.BeautifyPanel();
+            this.beautifyPanel2 = new Remedial_BIRU.Template.CustomPanel.BeautifyPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.searchTextBox1 = new Attendance_Management.View.Template.CustomTextBox.SearchTextBox();
+            this.searchTextBox1 = new Remedial_BIRU.View.Template.CustomTextBox.SearchTextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -326,7 +326,7 @@ namespace Attendance_Management.View.UserControls
         }
 
         #endregion
-        private Attendance_Management.Template.CustomPanel.BeautifyPanel beautifyPanel1;
+        private Remedial_BIRU.Template.CustomPanel.BeautifyPanel beautifyPanel1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private Template.CustomPanel.ManageCardPanel manageCardPanel1;
@@ -336,7 +336,7 @@ namespace Attendance_Management.View.UserControls
         private Template.CustomPanel.ManageCardPanel manageCardPanel5;
         private Template.CustomPanel.ManageCardPanel manageCardPanel6;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private Attendance_Management.Template.CustomPanel.BeautifyPanel beautifyPanel2;
+        private Remedial_BIRU.Template.CustomPanel.BeautifyPanel beautifyPanel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Panel panel2;

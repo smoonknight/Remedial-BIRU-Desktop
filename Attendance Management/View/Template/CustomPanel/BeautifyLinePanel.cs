@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Attendance_Management.Classes.CustomColor;
+using Remedial_BIRU.Classes.CustomColor;
 
-namespace Attendance_Management.View.Template.CustomPanel
+namespace Remedial_BIRU.View.Template.CustomPanel
 {
     class BeautifyLinePanel : Panel
     {

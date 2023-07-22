@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Attendance_Management.Classes.Controllers
+namespace Remedial_BIRU.Classes.Controllers
 {
     class DateTimeController
     {
