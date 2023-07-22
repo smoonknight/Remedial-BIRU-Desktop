@@ -82,6 +82,12 @@
     <Compile Include="View\Forms\InputExcelForm.Designer.cs">
       <DependentUpon>InputExcelForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Forms\TravelingSalesmanProblemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Forms\TravelingSalesmanProblemForm.Designer.cs">
+      <DependentUpon>TravelingSalesmanProblemForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Template\CustomPanel\UserControlPanel.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -168,6 +174,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Forms\InputExcelForm.resx">
       <DependentUpon>InputExcelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Forms\TravelingSalesmanProblemForm.resx">
+      <DependentUpon>TravelingSalesmanProblemForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\UserControls\CustomerListUserControl.resx">
       <DependentUpon>CustomerListUserControl.cs</DependentUpon>

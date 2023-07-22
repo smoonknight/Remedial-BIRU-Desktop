@@ -5,7 +5,7 @@ namespace Remedial_BIRU.Classes.Algoritms
     class TravelingSalesmanProblem
     {
         static int N = 10; // Jumlah titik lokasi
-        static double[,] distance = new double[N, N]; // Array untuk menyimpan jarak antara titik lokasi
+        public static double[,] distance = new double[N, N]; // Array untuk menyimpan jarak antara titik lokasi
 
         public struct Point
         {
@@ -19,7 +19,7 @@ namespace Remedial_BIRU.Classes.Algoritms
             }
         }
 
-        static double HaversineDistance(Point p1, Point p2)
+        public static double HaversineDistance(Point p1, Point p2)
         {
             double R = 6371;
 
@@ -41,7 +41,7 @@ namespace Remedial_BIRU.Classes.Algoritms
             return distance;
         }
 
-        static double TSPBruteForce(int[] path, bool[] visited, int current, int count, double currentCost, double minCost)
+        public static double TSPBruteForce(int[] path, bool[] visited, int current, int count, double currentCost, double minCost)
         {
             if (count == N)
             {

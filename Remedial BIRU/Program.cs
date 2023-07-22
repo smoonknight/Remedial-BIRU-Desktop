@@ -1,4 +1,5 @@
 ﻿using OfficeOpenXml;
+using Remedial_BIRU.View.Forms;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,7 +19,7 @@ namespace Remedial_BIRU
             ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+            Application.Run(new TravelingSalesmanProblemForm());
         }
     }
 }

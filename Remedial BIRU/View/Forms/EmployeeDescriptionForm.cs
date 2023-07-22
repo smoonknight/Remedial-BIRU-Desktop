@@ -30,6 +30,7 @@ namespace Remedial_BIRU.View.Forms
                 return;
             }
             NameCommonLabel.Text = customerArrearsData.name;
+            nameUnderPhotoCommonLabel.Text = customerArrearsData.name;
             addressCommonLabel.Text = customerArrearsData.address;
             contactNumberCommonLabel.Text = customerArrearsData.contactNumber;
             informationCommonLabel.Text = customerArrearsData.information;
