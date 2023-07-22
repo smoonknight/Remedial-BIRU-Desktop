@@ -283,7 +283,6 @@ namespace Remedial_BIRU
         }
 
         #endregion
-        private View.UserControls.EmployeeListUserControl employeeListUserControl1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.Label label4;

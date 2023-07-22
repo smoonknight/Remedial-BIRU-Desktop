@@ -1,0 +1,13 @@
+{
+  "name": [ "nama" ],
+  "address": [ "alamat" ],
+  "contactNumber": [ "hp", "nomor hp", "nomor handphone" ],
+  "information": [ "keterangan" ],
+  "status": [ "status" ],
+  "ceiling": [ "plafon" ],
+  "totalPayment": [ "total" ],
+  "col": [ "col" ],
+  "address": [ "alamat" ],
+  "latitude": [ "latitude" ],
+  "longitude": [ "longitude" ]
+}

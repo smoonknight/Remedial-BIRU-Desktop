@@ -18,7 +18,5 @@ namespace Remedial_BIRU.DataCollections
         public string Latitude { get; set; }
         public string Longitude { get; set; }
         public string Address { get; set; }
-
-        public static CustomerArrearsData[] customerArrearsDatas;
     }
 }

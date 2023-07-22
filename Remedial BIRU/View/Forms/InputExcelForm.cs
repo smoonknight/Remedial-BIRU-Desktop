@@ -1,4 +1,7 @@
-﻿using OfficeOpenXml;
+﻿using Newtonsoft.Json;
+using OfficeOpenXml;
+using Remedial_BIRU.Classes.Controllers;
+using Remedial_BIRU.DataCollections;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,55 +17,109 @@ namespace Remedial_BIRU.View.Forms
 {
     public partial class InputExcelForm : Form
     {
+        List<string> dataTableList = new List<string>();
+
+        struct customerArrearsAndComboBoxes
+        {
+            public List<string> customerArrearData;
+            public ComboBox comboBoxData;
+
+            public customerArrearsAndComboBoxes(List<string> customerArrear, ComboBox comboBox)
+            {
+                this.customerArrearData = customerArrear;
+                this.comboBoxData = comboBox;
+            }
+        }
+        
         string path;
-        public InputExcelForm(string directory = @"D:\Tungakan Nasabah.xlsx")
+
+        public InputExcelForm(string directory = @"D:\debug.xlsx")
         {
             InitializeComponent();
             path = directory;
         }
 
-        private void InputExcelForm_Load(object sender, EventArgs e)
+        private async void InputExcelForm_Load(object sender, EventArgs e)
         {
-            FileInfo fileInfo = new FileInfo(path);
-            DataTable dataTable = new DataTable();
+            DataTable dataTable = await DataTableController.ExcelToDataTable(path);
+            customerDataGridView.DataSource = dataTable;
 
-            using (var package = new ExcelPackage(fileInfo))
+            foreach (DataColumn dataColumn in dataTable.Columns)
             {
-                ExcelWorksheet worksheet = package.Workbook.Worksheets[0];
-                string worksheetName = package.Workbook.Worksheets[0].Name;
-
-                int rowCount = worksheet.Dimension.Rows;
-                int columnCount = worksheet.Dimension.Columns;
-
-                for (int col = 1; col <= columnCount; col++)
-                {
-                    object cellValue = worksheet.Cells[1, col].Value;
-                    if (cellValue != null && !string.IsNullOrWhiteSpace(cellValue.ToString()))
-                    {
-                        dataTable.Columns.Add(cellValue.ToString());
-                    }
-                }
-
-                for (int row = 2; row <= rowCount; row++)
-                {
-                    DataRow dataRow = dataTable.NewRow();
-
-                    for (int col = 1; col <= columnCount; col++)
-                    {
-                        object cellValue = worksheet.Cells[row, col].Value;
-                        if (cellValue != null && !string.IsNullOrWhiteSpace(cellValue.ToString()))
-                        {
-                            dataRow[col - 1] = cellValue;
-                        }
-                        
-                    }
-
-                    dataTable.Rows.Add(dataRow);
-                }
-
-                // Set DataGridView's DataSource ke DataTable yang telah dibuat
-                dataGridView1.DataSource = dataTable;
+                dataTableList.Add(dataColumn.ColumnName);
             }
+
+            SetComboBoxValue();
+            await StartAutomaticMatchData();
+        }
+
+        private async void automaticMatchDataButton_Click(object sender, EventArgs e)
+        {
+            await StartAutomaticMatchData();
+        }
+
+        private async Task StartAutomaticMatchData()
+        {
+            string json = File.ReadAllText("Data/automatic-match.json");
+            AutomaticMatchData automaticMatchData = JsonConvert.DeserializeObject<AutomaticMatchData>(json);
+
+            List<customerArrearsAndComboBoxes> properties = new List<customerArrearsAndComboBoxes>
+            {
+                new customerArrearsAndComboBoxes(automaticMatchData.name, nameComboBox),
+                new customerArrearsAndComboBoxes(automaticMatchData.address, addressComboBox),
+                new customerArrearsAndComboBoxes(automaticMatchData.contactNumber, contactNumberComboBox),
+                new customerArrearsAndComboBoxes(automaticMatchData.information, informationComboBox),
+                new customerArrearsAndComboBoxes(automaticMatchData.status, statusComboBox),
+                new customerArrearsAndComboBoxes(automaticMatchData.ceiling, ceilingComboBox),
+                new customerArrearsAndComboBoxes(automaticMatchData.totalPayment, totalPaymentComboBox),
+                new customerArrearsAndComboBoxes(automaticMatchData.col, colComboBox),
+                new customerArrearsAndComboBoxes(automaticMatchData.latitude, latitudeComboBox),
+                new customerArrearsAndComboBoxes(automaticMatchData.longitude, longitudeComboBox)
+            };
+
+            foreach (customerArrearsAndComboBoxes property in properties)
+            {
+                foreach (string value in property.customerArrearData)
+                {
+                    foreach (string data in dataTableList)
+                    {
+                        if (value == data)
+                        {
+                            property.comboBoxData.SelectedItem = data;
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+
+        private void SetComboBoxValue()
+        {
+            List<ComboBox> comboBoxes = new List<ComboBox>()
+            {
+                nameComboBox,
+                addressComboBox,
+                contactNumberComboBox,
+                informationComboBox,
+                statusComboBox,
+                ceilingComboBox,
+                totalPaymentComboBox,
+                colComboBox,
+                latitudeComboBox,
+                longitudeComboBox
+            };
+
+            foreach (ComboBox comboBox in comboBoxes)
+            {
+                comboBox.Items.Clear();
+                comboBox.Items.AddRange(dataTableList.ToArray());
+                comboBox.SelectedIndex = 0;
+            }
+        }
+
+        private void resetButton_Click(object sender, EventArgs e)
+        {
+            SetComboBoxValue();
         }
     }
 }
