@@ -124,8 +124,8 @@ namespace Remedial_BIRU.View.Forms
                 customerArrearsData.ceiling = data[ceilingComboBox.Text].ToString();
                 customerArrearsData.totalPayment = data[totalPaymentComboBox.Text].ToString();
                 customerArrearsData.col = data[colComboBox.Text].ToString();
-                customerArrearsData.latitude = data[latitudeComboBox.Text].ToString();
-                customerArrearsData.longitude = data[longitudeComboBox.Text].ToString();
+                customerArrearsData.latitude = double.Parse(data[latitudeComboBox.Text].ToString());
+                customerArrearsData.longitude = double.Parse(data[longitudeComboBox.Text].ToString());
 
                 CustomerArrearsDataCollection.customerArrearsDatas.Add(customerArrearsData);
             }

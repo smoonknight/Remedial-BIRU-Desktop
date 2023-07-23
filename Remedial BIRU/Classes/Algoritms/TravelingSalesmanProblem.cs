@@ -1,113 +1,89 @@
-﻿using System;
+﻿using Remedial_BIRU.DataCollections;
+using System;
+using System.Collections.Generic;
 
 namespace Remedial_BIRU.Classes.Algoritms
 {
     class TravelingSalesmanProblem
     {
-        static int N = 10; // Jumlah titik lokasi
-        public static double[,] distance = new double[N, N]; // Array untuk menyimpan jarak antara titik lokasi
-
-        public struct Point
+        public static List<Point> NearestNeighborTSP(List<Point> points)
         {
-            public double Latitude;
-            public double Longitude;
+            List<Point> unvisited = new List<Point>(points);
+            List<Point> route = new List<Point>();
+            Point current = unvisited[0]; // Pilih titik awal (misalnya, titik pertama dalam daftar)
 
-            public Point(double lat, double lon)
+            unvisited.Remove(current);
+            route.Add(current);
+
+            while (unvisited.Count > 0)
             {
-                Latitude = lat;
-                Longitude = lon;
+                Point nearestNeighbor = FindNearestNeighbor(current, unvisited);
+                current = nearestNeighbor;
+                unvisited.Remove(current);
+                route.Add(current);
             }
+
+            // Kembali ke titik awal untuk menyelesaikan rute
+            route.Add(route[0]);
+
+            return route;
         }
 
-        public static double HaversineDistance(Point p1, Point p2)
+        public static Point FindNearestNeighbor(Point origin, List<Point> candidates)
         {
-            double R = 6371;
+            double minDistance = double.MaxValue;
+            Point nearestNeighbor = null;
 
-            double lat1Rad = p1.Latitude * Math.PI / 180.0;
-            double lon1Rad = p1.Longitude * Math.PI / 180.0;
-            double lat2Rad = p2.Latitude * Math.PI / 180.0;
-            double lon2Rad = p2.Longitude * Math.PI / 180.0;
+            foreach (var candidate in candidates)
+            {
+                double distance = Haversine(origin.Latitude, origin.Longitude, candidate.Latitude, candidate.Longitude);
+                if (distance < minDistance)
+                {
+                    minDistance = distance;
+                    nearestNeighbor = candidate;
+                }
+            }
 
-            double dLat = lat2Rad - lat1Rad;
-            double dLon = lon2Rad - lon1Rad;
+            return nearestNeighbor;
+        }
 
+        // Rumus haversine untuk menghitung jarak antara dua titik koordinat
+        public static double Haversine(double lat1, double lon1, double lat2, double lon2)
+        {
+            const double R = 6371.0; // Radius bumi dalam kilometer
+
+            double dLat = (lat2 - lat1) * (Math.PI / 180.0);
+            double dLon = (lon2 - lon1) * (Math.PI / 180.0);
             double a = Math.Sin(dLat / 2) * Math.Sin(dLat / 2) +
-                       Math.Cos(lat1Rad) * Math.Cos(lat2Rad) *
+                       Math.Cos(lat1 * (Math.PI / 180.0)) * Math.Cos(lat2 * (Math.PI / 180.0)) *
                        Math.Sin(dLon / 2) * Math.Sin(dLon / 2);
-
             double c = 2 * Math.Atan2(Math.Sqrt(a), Math.Sqrt(1 - a));
-
             double distance = R * c;
+
             return distance;
         }
 
-        public static double TSPBruteForce(int[] path, bool[] visited, int current, int count, double currentCost, double minCost)
+        public static double CalculateTotalDistance(List<Point> route)
         {
-            if (count == N)
+            double totalDistance = 0;
+            for (int i = 0; i < route.Count - 1; i++)
             {
-                minCost = Math.Min(minCost, currentCost + distance[current, 0]);
-                return minCost;
+                totalDistance += Haversine(route[i].Latitude, route[i].Longitude, route[i + 1].Latitude, route[i + 1].Longitude);
             }
-
-            for (int i = 0; i < N; i++)
-            {
-                if (!visited[i])
-                {
-                    visited[i] = true;
-                    path[count] = i;
-
-                    double newCost = currentCost + distance[current, i];
-
-                    if (newCost < minCost)
-                    {
-                        minCost = TSPBruteForce(path, visited, i, count + 1, newCost, minCost);
-                    }
-
-                    visited[i] = false;
-                }
-            }
-
-            return minCost;
+            return totalDistance;
         }
+    }
+    public class Point
+    {
+        public CustomerArrearsData Name { get; set; }
+        public double Latitude { get; set; }
+        public double Longitude { get; set; }
 
-        /*static void Main()
+        public Point(CustomerArrearsData customerArrearsData, double latitude, double longitude)
         {
-            Point[] locations = new Point[]
-            {
-                new Point(12.5200, 77.8567),
-                new Point(19.0760, 72.8777),
-                new Point(28.6139, 77.2090),
-                new Point(51.5074, 0.1278),
-                new Point(40.7128, -74.0060),
-                new Point(35.6895, 139.6917),
-                new Point(-33.8688, 151.2093),
-                new Point(37.7749, -122.4194),
-                new Point(37.5665, 126.9780),
-                new Point(55.7558, 37.6173)
-            };
-
-            for (int i = 0; i < N; i++)
-            {
-                for (int j = 0; j < N; j++)
-                {
-                    distance[i, j] = HaversineDistance(locations[i], locations[j]);
-                }
-            }
-
-            int[] shortestPath = new int[N];
-            bool[] visited = new bool[N];
-            visited[0] = true;
-
-            double minCost = TSPBruteForce(shortestPath, visited, 0, 1, 0, double.MaxValue);
-
-            Console.WriteLine("Rute Terpendek:");
-            for (int i = 0; i < N; i++)
-            {
-                int locationIndex = shortestPath[i];
-                Console.WriteLine($"{i + 1}. {locations[locationIndex].Latitude}, {locations[locationIndex].Longitude}");
-            }
-
-            Console.WriteLine($"Total Jarak: {minCost} kilometer");
-        }*/
+            Name = customerArrearsData;
+            Latitude = latitude;
+            Longitude = longitude;
+        }
     }
 }

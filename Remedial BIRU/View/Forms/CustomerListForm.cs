@@ -19,7 +19,8 @@ namespace Remedial_BIRU.View.Forms
 
         private void visitButton_Click(object sender, EventArgs e)
         {
-
+            Form form = new TravelingSalesmanProblemForm();
+            form.Show();
         }
     }
 }

@@ -16,8 +16,8 @@ namespace Remedial_BIRU.DataCollections
         public string ceiling { get; set; }
         public string totalPayment { get; set; }
         public string col { get; set; }
-        public string latitude { get; set; }
-        public string longitude { get; set; }
+        public double latitude { get; set; }
+        public double longitude { get; set; }
     }
 
     class CustomerArrearsDataCollection

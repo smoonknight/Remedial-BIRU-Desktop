@@ -38,8 +38,8 @@ namespace Remedial_BIRU.View.Forms
             ceilingCommonLabel.Text = customerArrearsData.ceiling;
             totalPaymentCommonLabel.Text = customerArrearsData.totalPayment;
             colCommonLabel.Text = customerArrearsData.col;
-            latitudeCommonLabel.Text = customerArrearsData.latitude;
-            longitudeCommonLabel.Text = customerArrearsData.longitude;
+            latitudeCommonLabel.Text = customerArrearsData.latitude.ToString();
+            longitudeCommonLabel.Text = customerArrearsData.longitude.ToString();
         }
     }
 }

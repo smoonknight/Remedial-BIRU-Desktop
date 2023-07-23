@@ -19,7 +19,9 @@ namespace Remedial_BIRU
             ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TravelingSalesmanProblemForm());
+            //Application.Run(new TravelingSalesmanProblemForm());
+            Application.Run(new MainForm());
+
         }
     }
 }
