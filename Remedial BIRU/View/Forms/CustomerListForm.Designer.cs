@@ -29,23 +29,14 @@ namespace Remedial_BIRU.View.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.customerListUserControl1 = new Remedial_BIRU.View.UserControls.CustomerListUserControl();
             this.headerPanel = new System.Windows.Forms.Panel();
             this.headerTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.visitButton = new System.Windows.Forms.Button();
+            this.customerListUserControl1 = new Remedial_BIRU.View.UserControls.CustomerListUserControl();
             this.headerPanel.SuspendLayout();
             this.headerTableLayoutPanel.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // customerListUserControl1
-            // 
-            this.customerListUserControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(230)))), ((int)(((byte)(233)))));
-            this.customerListUserControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.customerListUserControl1.Location = new System.Drawing.Point(0, 44);
-            this.customerListUserControl1.Name = "customerListUserControl1";
-            this.customerListUserControl1.Size = new System.Drawing.Size(784, 517);
-            this.customerListUserControl1.TabIndex = 0;
             // 
             // headerPanel
             // 
@@ -62,17 +53,17 @@ namespace Remedial_BIRU.View.Forms
             // headerTableLayoutPanel
             // 
             this.headerTableLayoutPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(25)))), ((int)(((byte)(39)))));
-            this.headerTableLayoutPanel.ColumnCount = 10;
+            this.headerTableLayoutPanel.ColumnCount = 3;
             this.headerTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
             this.headerTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 80F));
-            this.headerTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 70F));
-            this.headerTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 120F));
-            this.headerTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 90F));
             this.headerTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.headerTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 120F));
-            this.headerTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.headerTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.headerTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200F));
+            this.headerTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.headerTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.headerTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.headerTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.headerTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.headerTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.headerTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.headerTableLayoutPanel.Controls.Add(this.label1, 0, 0);
             this.headerTableLayoutPanel.Controls.Add(this.visitButton, 1, 0);
             this.headerTableLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -108,6 +99,15 @@ namespace Remedial_BIRU.View.Forms
             this.visitButton.Text = "Kunjungan";
             this.visitButton.UseVisualStyleBackColor = true;
             this.visitButton.Click += new System.EventHandler(this.visitButton_Click);
+            // 
+            // customerListUserControl1
+            // 
+            this.customerListUserControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(230)))), ((int)(((byte)(233)))));
+            this.customerListUserControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.customerListUserControl1.Location = new System.Drawing.Point(0, 44);
+            this.customerListUserControl1.Name = "customerListUserControl1";
+            this.customerListUserControl1.Size = new System.Drawing.Size(784, 517);
+            this.customerListUserControl1.TabIndex = 0;
             // 
             // CustomerListForm
             // 

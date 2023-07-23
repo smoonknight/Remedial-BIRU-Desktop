@@ -21,16 +21,20 @@ namespace Remedial_BIRU.View.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
+            StartTravelingSalesmanProblemAlgoritm();
+        }
+        
+        private void StartTravelingSalesmanProblemAlgoritm()
+        {
             List<Classes.Algoritms.Point> points = new List<Classes.Algoritms.Point>();
 
-            foreach(CustomerArrearsData data in CustomerArrearsDataCollection.customerArrearsDatas)
+            foreach (CustomerArrearsData data in CustomerArrearsDataCollection.customerArrearsDatas)
             {
                 points.Add(new Classes.Algoritms.Point(data, data.latitude, data.longitude));
             }
 
             List<Classes.Algoritms.Point> shortestRoute = TravelingSalesmanProblem.NearestNeighborTSP(points);
 
-            Console.WriteLine("Rute terpendek:");
             foreach (var point in shortestRoute)
             {
                 Console.WriteLine($"{point.Name} ({point.Latitude}, {point.Longitude})");
@@ -39,6 +43,5 @@ namespace Remedial_BIRU.View.Forms
             double totalDistance = TravelingSalesmanProblem.CalculateTotalDistance(shortestRoute);
             Console.WriteLine($"Total jarak: {totalDistance} kilometer");
         }
-
     }
 }
