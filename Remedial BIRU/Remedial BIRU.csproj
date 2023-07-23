@@ -70,6 +70,7 @@
     <Compile Include="Classes\Controllers\DataTableController.cs" />
     <Compile Include="DataCollections\AutomaticMatchData.cs" />
     <Compile Include="DataCollections\CustomerArrearsData.cs" />
+    <Compile Include="DataCollections\TravelingSalesmanProblemData.cs" />
     <Compile Include="View\Forms\CustomerListForm.cs">
       <SubType>Form</SubType>
     </Compile>

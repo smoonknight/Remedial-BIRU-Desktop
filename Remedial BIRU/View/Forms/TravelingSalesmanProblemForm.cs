@@ -17,23 +17,20 @@ namespace Remedial_BIRU.View.Forms
         public TravelingSalesmanProblemForm()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
             StartTravelingSalesmanProblemAlgoritm();
         }
+
         
         private void StartTravelingSalesmanProblemAlgoritm()
         {
-            List<Classes.Algoritms.Point> points = new List<Classes.Algoritms.Point>();
+            List<TravelingSalesmanProblemData> points = new List<TravelingSalesmanProblemData>();
 
             foreach (CustomerArrearsData data in CustomerArrearsDataCollection.customerArrearsDatas)
             {
-                points.Add(new Classes.Algoritms.Point(data, data.latitude, data.longitude));
+                points.Add(new TravelingSalesmanProblemData(data, data.latitude, data.longitude));
             }
 
-            List<Classes.Algoritms.Point> shortestRoute = TravelingSalesmanProblem.NearestNeighborTSP(points);
+            List<TravelingSalesmanProblemData> shortestRoute = TravelingSalesmanProblem.NearestNeighborTSP(points);
 
             foreach (var point in shortestRoute)
             {

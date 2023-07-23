@@ -6,33 +6,32 @@ namespace Remedial_BIRU.Classes.Algoritms
 {
     class TravelingSalesmanProblem
     {
-        public static List<Point> NearestNeighborTSP(List<Point> points)
+        public static List<TravelingSalesmanProblemData> NearestNeighborTSP(List<TravelingSalesmanProblemData> points)
         {
-            List<Point> unvisited = new List<Point>(points);
-            List<Point> route = new List<Point>();
-            Point current = unvisited[0]; // Pilih titik awal (misalnya, titik pertama dalam daftar)
+            List<TravelingSalesmanProblemData> unvisited = new List<TravelingSalesmanProblemData>(points);
+            List<TravelingSalesmanProblemData> route = new List<TravelingSalesmanProblemData>();
+            TravelingSalesmanProblemData current = unvisited[0];
 
             unvisited.Remove(current);
             route.Add(current);
 
             while (unvisited.Count > 0)
             {
-                Point nearestNeighbor = FindNearestNeighbor(current, unvisited);
+                TravelingSalesmanProblemData nearestNeighbor = FindNearestNeighbor(current, unvisited);
                 current = nearestNeighbor;
                 unvisited.Remove(current);
                 route.Add(current);
             }
 
-            // Kembali ke titik awal untuk menyelesaikan rute
             route.Add(route[0]);
 
             return route;
         }
 
-        public static Point FindNearestNeighbor(Point origin, List<Point> candidates)
+        public static TravelingSalesmanProblemData FindNearestNeighbor(TravelingSalesmanProblemData origin, List<TravelingSalesmanProblemData> candidates)
         {
             double minDistance = double.MaxValue;
-            Point nearestNeighbor = null;
+            TravelingSalesmanProblemData nearestNeighbor = null;
 
             foreach (var candidate in candidates)
             {
@@ -47,23 +46,22 @@ namespace Remedial_BIRU.Classes.Algoritms
             return nearestNeighbor;
         }
 
-        // Rumus haversine untuk menghitung jarak antara dua titik koordinat
-        public static double Haversine(double lat1, double lon1, double lat2, double lon2)
+        public static double Haversine(double latitude1, double longitude1, double latitude2, double longitude2)
         {
-            const double R = 6371.0; // Radius bumi dalam kilometer
+            const double R = 6371.0;
 
-            double dLat = (lat2 - lat1) * (Math.PI / 180.0);
-            double dLon = (lon2 - lon1) * (Math.PI / 180.0);
-            double a = Math.Sin(dLat / 2) * Math.Sin(dLat / 2) +
-                       Math.Cos(lat1 * (Math.PI / 180.0)) * Math.Cos(lat2 * (Math.PI / 180.0)) *
-                       Math.Sin(dLon / 2) * Math.Sin(dLon / 2);
-            double c = 2 * Math.Atan2(Math.Sqrt(a), Math.Sqrt(1 - a));
-            double distance = R * c;
+            double dLatitude = (latitude2 - latitude1) * (Math.PI / 180.0);
+            double dLongitude = (longitude2 - longitude1) * (Math.PI / 180.0);
+            double calculate = Math.Sin(dLatitude / 2) * Math.Sin(dLatitude / 2) +
+                       Math.Cos(latitude1 * (Math.PI / 180.0)) * Math.Cos(latitude2 * (Math.PI / 180.0)) *
+                       Math.Sin(dLongitude / 2) * Math.Sin(dLongitude / 2);
+            double finalCalculate = 2 * Math.Atan2(Math.Sqrt(calculate), Math.Sqrt(1 - calculate));
+            double distance = R * finalCalculate;
 
             return distance;
         }
 
-        public static double CalculateTotalDistance(List<Point> route)
+        public static double CalculateTotalDistance(List<TravelingSalesmanProblemData> route)
         {
             double totalDistance = 0;
             for (int i = 0; i < route.Count - 1; i++)
@@ -71,19 +69,6 @@ namespace Remedial_BIRU.Classes.Algoritms
                 totalDistance += Haversine(route[i].Latitude, route[i].Longitude, route[i + 1].Latitude, route[i + 1].Longitude);
             }
             return totalDistance;
-        }
-    }
-    public class Point
-    {
-        public CustomerArrearsData Name { get; set; }
-        public double Latitude { get; set; }
-        public double Longitude { get; set; }
-
-        public Point(CustomerArrearsData customerArrearsData, double latitude, double longitude)
-        {
-            Name = customerArrearsData;
-            Latitude = latitude;
-            Longitude = longitude;
         }
     }
 }
