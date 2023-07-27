@@ -229,7 +229,7 @@ namespace Remedial_BIRU.View.UserControls
             this.commonLabel5.Name = "commonLabel5";
             this.commonLabel5.Size = new System.Drawing.Size(119, 40);
             this.commonLabel5.TabIndex = 7;
-            this.commonLabel5.Text = "Total Biaya";
+            this.commonLabel5.Text = "Total Tungakan";
             this.commonLabel5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // commonLabel4

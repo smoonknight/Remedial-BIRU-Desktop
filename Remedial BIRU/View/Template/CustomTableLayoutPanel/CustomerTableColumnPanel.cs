@@ -56,7 +56,7 @@ namespace Remedial_BIRU.View.Template.CustomTableLayoutPanel
 
         private void EmployeeTableColumnPanel_Click (object sender, EventArgs e)
         {
-            EmployeeDescriptionForm employeeDescriptionForm = new EmployeeDescriptionForm(customerArrearsData);
+            CustomerDescriptionForm employeeDescriptionForm = new CustomerDescriptionForm(customerArrearsData);
             employeeDescriptionForm.ShowDialog();
         }
 

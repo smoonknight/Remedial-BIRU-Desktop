@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace Remedial_BIRU.DataCollections
 {
-    class TravelingSalesmanProblemData
+    public class TravelingSalesmanProblemData
     {
-        public CustomerArrearsData Name { get; set; }
+        public CustomerArrearsData customerArrearsData { get; set; }
         public double Latitude { get; set; }
         public double Longitude { get; set; }
 
         public TravelingSalesmanProblemData(CustomerArrearsData customerArrearsData, double latitude, double longitude)
         {
-            Name = customerArrearsData;
+            this.customerArrearsData = customerArrearsData;
             Latitude = latitude;
             Longitude = longitude;
         }

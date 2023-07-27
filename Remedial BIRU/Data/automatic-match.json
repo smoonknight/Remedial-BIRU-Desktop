@@ -1,12 +1,14 @@
 {
+  "uid": [ "nokontrak", "nomor iba", "uid", "id", "no" ],
   "name": [ "nama" ],
   "address": [ "alamat" ],
   "contactNumber": [ "hp", "nomor hp", "nomor handphone" ],
-  "information": [ "keterangan" ],
-  "status": [ "status" ],
+  "daysInArrears": [ "tgk hari" ],
+  "dueDate": [ "tglexp", "jatuh tempo", "due date" ],
   "ceiling": [ "plafon" ],
-  "totalPayment": [ "total" ],
+  "totalPayment": [ "total", "ttl tggkn" ],
   "col": [ "col" ],
   "latitude": [ "latitude" ],
-  "longitude": [ "longitude" ]
+  "longitude": [ "longitude" ],
+  "linkGoogleMaps": [ "linkGoogleMaps", "link google maps", "link gmaps", ]
 }

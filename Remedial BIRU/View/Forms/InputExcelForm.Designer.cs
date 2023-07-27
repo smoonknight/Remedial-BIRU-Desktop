@@ -83,6 +83,16 @@ namespace Remedial_BIRU.View.Forms
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.commonLabel42 = new Remedial_BIRU.View.Labels.CommonLabel();
             this.nameComboBox = new System.Windows.Forms.ComboBox();
+            this.beautifyPanel6 = new Remedial_BIRU.Template.CustomPanel.BeautifyPanel();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
+            this.numberIBAComboBox = new System.Windows.Forms.ComboBox();
+            this.commonLabel1 = new Remedial_BIRU.View.Labels.CommonLabel();
+            this.beautifyPanel7 = new Remedial_BIRU.Template.CustomPanel.BeautifyPanel();
+            this.tableLayoutPanel27 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel28 = new System.Windows.Forms.TableLayoutPanel();
+            this.linkGooglemapsComboBox = new System.Windows.Forms.ComboBox();
+            this.commonLabel2 = new Remedial_BIRU.View.Labels.CommonLabel();
             this.beautifyPanel1 = new Remedial_BIRU.Template.CustomPanel.BeautifyPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.beautifyPanel5 = new Remedial_BIRU.Template.CustomPanel.BeautifyPanel();
@@ -125,6 +135,12 @@ namespace Remedial_BIRU.View.Forms
             this.beautifyPanel3.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
+            this.beautifyPanel6.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
+            this.tableLayoutPanel8.SuspendLayout();
+            this.beautifyPanel7.SuspendLayout();
+            this.tableLayoutPanel27.SuspendLayout();
+            this.tableLayoutPanel28.SuspendLayout();
             this.beautifyPanel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.beautifyPanel5.SuspendLayout();
@@ -141,10 +157,10 @@ namespace Remedial_BIRU.View.Forms
             this.customerDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.customerDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.customerDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.customerDataGridView.Location = new System.Drawing.Point(3, 313);
+            this.customerDataGridView.Location = new System.Drawing.Point(3, 373);
             this.customerDataGridView.Name = "customerDataGridView";
             this.customerDataGridView.ReadOnly = true;
-            this.customerDataGridView.Size = new System.Drawing.Size(778, 245);
+            this.customerDataGridView.Size = new System.Drawing.Size(778, 185);
             this.customerDataGridView.TabIndex = 1;
             // 
             // tableLayoutPanel1
@@ -157,7 +173,7 @@ namespace Remedial_BIRU.View.Forms
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 310F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 370F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(784, 561);
             this.tableLayoutPanel1.TabIndex = 0;
@@ -174,7 +190,7 @@ namespace Remedial_BIRU.View.Forms
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(778, 304);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(778, 364);
             this.tableLayoutPanel2.TabIndex = 2;
             // 
             // tableLayoutPanel5
@@ -182,7 +198,6 @@ namespace Remedial_BIRU.View.Forms
             this.tableLayoutPanel5.ColumnCount = 2;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel5.Controls.Add(this.beautifyPanel49, 1, 4);
             this.tableLayoutPanel5.Controls.Add(this.beautifyPanel48, 0, 4);
             this.tableLayoutPanel5.Controls.Add(this.beautifyPanel47, 1, 3);
@@ -193,18 +208,21 @@ namespace Remedial_BIRU.View.Forms
             this.tableLayoutPanel5.Controls.Add(this.beautifyPanel42, 0, 1);
             this.tableLayoutPanel5.Controls.Add(this.beautifyPanel41, 1, 0);
             this.tableLayoutPanel5.Controls.Add(this.beautifyPanel3, 0, 0);
+            this.tableLayoutPanel5.Controls.Add(this.beautifyPanel6, 0, 5);
+            this.tableLayoutPanel5.Controls.Add(this.beautifyPanel7, 1, 5);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel5.Location = new System.Drawing.Point(7, 3);
             this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(7, 3, 3, 3);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
-            this.tableLayoutPanel5.RowCount = 6;
+            this.tableLayoutPanel5.RowCount = 7;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(518, 298);
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(518, 358);
             this.tableLayoutPanel5.TabIndex = 4;
             // 
             // beautifyPanel49
@@ -331,7 +349,7 @@ namespace Remedial_BIRU.View.Forms
             this.commonLabel59.Name = "commonLabel59";
             this.commonLabel59.Size = new System.Drawing.Size(204, 24);
             this.commonLabel59.TabIndex = 0;
-            this.commonLabel59.Text = "Status";
+            this.commonLabel59.Text = "Jatuh Tempo";
             // 
             // beautifyPanel47
             // 
@@ -459,7 +477,7 @@ namespace Remedial_BIRU.View.Forms
             this.commonLabel55.Name = "commonLabel55";
             this.commonLabel55.Size = new System.Drawing.Size(204, 24);
             this.commonLabel55.TabIndex = 0;
-            this.commonLabel55.Text = "Keterangan";
+            this.commonLabel55.Text = "Hari Tertungak";
             // 
             // beautifyPanel45
             // 
@@ -845,6 +863,132 @@ namespace Remedial_BIRU.View.Forms
             this.nameComboBox.Size = new System.Drawing.Size(160, 21);
             this.nameComboBox.TabIndex = 1;
             // 
+            // beautifyPanel6
+            // 
+            this.beautifyPanel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.beautifyPanel6.BorderColor = System.Drawing.Color.Empty;
+            this.beautifyPanel6.BorderRadius = 15;
+            this.beautifyPanel6.BorderWidth = 3;
+            this.beautifyPanel6.Controls.Add(this.tableLayoutPanel4);
+            this.beautifyPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.beautifyPanel6.Location = new System.Drawing.Point(3, 303);
+            this.beautifyPanel6.Name = "beautifyPanel6";
+            this.beautifyPanel6.Size = new System.Drawing.Size(253, 54);
+            this.beautifyPanel6.TabIndex = 10;
+            // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.ColumnCount = 2;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 37F));
+            this.tableLayoutPanel4.Controls.Add(this.tableLayoutPanel8, 0, 0);
+            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 1;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(253, 54);
+            this.tableLayoutPanel4.TabIndex = 0;
+            // 
+            // tableLayoutPanel8
+            // 
+            this.tableLayoutPanel8.ColumnCount = 1;
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel8.Controls.Add(this.numberIBAComboBox, 0, 1);
+            this.tableLayoutPanel8.Controls.Add(this.commonLabel1, 0, 0);
+            this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel8.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel8.Name = "tableLayoutPanel8";
+            this.tableLayoutPanel8.RowCount = 2;
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(210, 48);
+            this.tableLayoutPanel8.TabIndex = 0;
+            // 
+            // numberIBAComboBox
+            // 
+            this.numberIBAComboBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.numberIBAComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.numberIBAComboBox.FormattingEnabled = true;
+            this.numberIBAComboBox.Location = new System.Drawing.Point(0, 24);
+            this.numberIBAComboBox.Margin = new System.Windows.Forms.Padding(0, 0, 50, 0);
+            this.numberIBAComboBox.Name = "numberIBAComboBox";
+            this.numberIBAComboBox.Size = new System.Drawing.Size(160, 21);
+            this.numberIBAComboBox.TabIndex = 2;
+            // 
+            // commonLabel1
+            // 
+            this.commonLabel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.commonLabel1.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.commonLabel1.Location = new System.Drawing.Point(3, 0);
+            this.commonLabel1.Name = "commonLabel1";
+            this.commonLabel1.Size = new System.Drawing.Size(204, 24);
+            this.commonLabel1.TabIndex = 0;
+            this.commonLabel1.Text = "Nomor iBA";
+            // 
+            // beautifyPanel7
+            // 
+            this.beautifyPanel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
+            this.beautifyPanel7.BorderColor = System.Drawing.Color.Empty;
+            this.beautifyPanel7.BorderRadius = 15;
+            this.beautifyPanel7.BorderWidth = 3;
+            this.beautifyPanel7.Controls.Add(this.tableLayoutPanel27);
+            this.beautifyPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.beautifyPanel7.Location = new System.Drawing.Point(262, 303);
+            this.beautifyPanel7.Name = "beautifyPanel7";
+            this.beautifyPanel7.Size = new System.Drawing.Size(253, 54);
+            this.beautifyPanel7.TabIndex = 11;
+            // 
+            // tableLayoutPanel27
+            // 
+            this.tableLayoutPanel27.ColumnCount = 2;
+            this.tableLayoutPanel27.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel27.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 37F));
+            this.tableLayoutPanel27.Controls.Add(this.tableLayoutPanel28, 0, 0);
+            this.tableLayoutPanel27.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel27.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel27.Name = "tableLayoutPanel27";
+            this.tableLayoutPanel27.RowCount = 1;
+            this.tableLayoutPanel27.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel27.Size = new System.Drawing.Size(253, 54);
+            this.tableLayoutPanel27.TabIndex = 0;
+            // 
+            // tableLayoutPanel28
+            // 
+            this.tableLayoutPanel28.ColumnCount = 1;
+            this.tableLayoutPanel28.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel28.Controls.Add(this.linkGooglemapsComboBox, 0, 1);
+            this.tableLayoutPanel28.Controls.Add(this.commonLabel2, 0, 0);
+            this.tableLayoutPanel28.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel28.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel28.Name = "tableLayoutPanel28";
+            this.tableLayoutPanel28.RowCount = 2;
+            this.tableLayoutPanel28.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel28.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel28.Size = new System.Drawing.Size(210, 48);
+            this.tableLayoutPanel28.TabIndex = 0;
+            // 
+            // linkGooglemapsComboBox
+            // 
+            this.linkGooglemapsComboBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.linkGooglemapsComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.linkGooglemapsComboBox.FormattingEnabled = true;
+            this.linkGooglemapsComboBox.Location = new System.Drawing.Point(0, 24);
+            this.linkGooglemapsComboBox.Margin = new System.Windows.Forms.Padding(0, 0, 50, 0);
+            this.linkGooglemapsComboBox.Name = "linkGooglemapsComboBox";
+            this.linkGooglemapsComboBox.Size = new System.Drawing.Size(160, 21);
+            this.linkGooglemapsComboBox.TabIndex = 2;
+            // 
+            // commonLabel2
+            // 
+            this.commonLabel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.commonLabel2.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.commonLabel2.Location = new System.Drawing.Point(3, 0);
+            this.commonLabel2.Name = "commonLabel2";
+            this.commonLabel2.Size = new System.Drawing.Size(204, 24);
+            this.commonLabel2.TabIndex = 0;
+            this.commonLabel2.Text = "Link Google Maps";
+            // 
             // beautifyPanel1
             // 
             this.beautifyPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(242)))), ((int)(((byte)(246)))));
@@ -856,7 +1000,7 @@ namespace Remedial_BIRU.View.Forms
             this.beautifyPanel1.Location = new System.Drawing.Point(533, 5);
             this.beautifyPanel1.Margin = new System.Windows.Forms.Padding(5);
             this.beautifyPanel1.Name = "beautifyPanel1";
-            this.beautifyPanel1.Size = new System.Drawing.Size(240, 294);
+            this.beautifyPanel1.Size = new System.Drawing.Size(240, 354);
             this.beautifyPanel1.TabIndex = 5;
             // 
             // tableLayoutPanel3
@@ -874,7 +1018,7 @@ namespace Remedial_BIRU.View.Forms
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(240, 294);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(240, 354);
             this.tableLayoutPanel3.TabIndex = 1;
             // 
             // beautifyPanel5
@@ -884,7 +1028,7 @@ namespace Remedial_BIRU.View.Forms
             this.beautifyPanel5.BorderWidth = 3;
             this.beautifyPanel5.Controls.Add(this.confirmButton);
             this.beautifyPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.beautifyPanel5.Location = new System.Drawing.Point(10, 267);
+            this.beautifyPanel5.Location = new System.Drawing.Point(10, 327);
             this.beautifyPanel5.Margin = new System.Windows.Forms.Padding(10, 3, 10, 3);
             this.beautifyPanel5.Name = "beautifyPanel5";
             this.beautifyPanel5.Size = new System.Drawing.Size(220, 24);
@@ -1002,6 +1146,12 @@ namespace Remedial_BIRU.View.Forms
             this.beautifyPanel3.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel7.ResumeLayout(false);
+            this.beautifyPanel6.ResumeLayout(false);
+            this.tableLayoutPanel4.ResumeLayout(false);
+            this.tableLayoutPanel8.ResumeLayout(false);
+            this.beautifyPanel7.ResumeLayout(false);
+            this.tableLayoutPanel27.ResumeLayout(false);
+            this.tableLayoutPanel28.ResumeLayout(false);
             this.beautifyPanel1.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.beautifyPanel5.ResumeLayout(false);
@@ -1074,5 +1224,15 @@ namespace Remedial_BIRU.View.Forms
         private System.Windows.Forms.ComboBox informationComboBox;
         private Remedial_BIRU.Template.CustomPanel.BeautifyPanel beautifyPanel5;
         private System.Windows.Forms.Button confirmButton;
+        private Remedial_BIRU.Template.CustomPanel.BeautifyPanel beautifyPanel6;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
+        private System.Windows.Forms.ComboBox numberIBAComboBox;
+        private Labels.CommonLabel commonLabel1;
+        private Remedial_BIRU.Template.CustomPanel.BeautifyPanel beautifyPanel7;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel27;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel28;
+        private System.Windows.Forms.ComboBox linkGooglemapsComboBox;
+        private Labels.CommonLabel commonLabel2;
     }
 }

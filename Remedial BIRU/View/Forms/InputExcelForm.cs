@@ -68,13 +68,15 @@ namespace Remedial_BIRU.View.Forms
                 new customerArrearsAndComboBoxes(automaticMatchData.name, nameComboBox),
                 new customerArrearsAndComboBoxes(automaticMatchData.address, addressComboBox),
                 new customerArrearsAndComboBoxes(automaticMatchData.contactNumber, contactNumberComboBox),
-                new customerArrearsAndComboBoxes(automaticMatchData.information, informationComboBox),
-                new customerArrearsAndComboBoxes(automaticMatchData.status, statusComboBox),
+                new customerArrearsAndComboBoxes(automaticMatchData.daysInArrears, informationComboBox),
+                new customerArrearsAndComboBoxes(automaticMatchData.dueDate, statusComboBox),
                 new customerArrearsAndComboBoxes(automaticMatchData.ceiling, ceilingComboBox),
                 new customerArrearsAndComboBoxes(automaticMatchData.totalPayment, totalPaymentComboBox),
                 new customerArrearsAndComboBoxes(automaticMatchData.col, colComboBox),
                 new customerArrearsAndComboBoxes(automaticMatchData.latitude, latitudeComboBox),
-                new customerArrearsAndComboBoxes(automaticMatchData.longitude, longitudeComboBox)
+                new customerArrearsAndComboBoxes(automaticMatchData.longitude, longitudeComboBox),
+                new customerArrearsAndComboBoxes(automaticMatchData.uid, numberIBAComboBox),
+                new customerArrearsAndComboBoxes(automaticMatchData.linkGoogleMaps, linkGooglemapsComboBox)
             };
 
             foreach (customerArrearsAndComboBoxes property in properties)
@@ -119,13 +121,16 @@ namespace Remedial_BIRU.View.Forms
                 customerArrearsData.name = data[nameComboBox.Text].ToString();
                 customerArrearsData.address = data[addressComboBox.Text].ToString();
                 customerArrearsData.contactNumber = data[contactNumberComboBox.Text].ToString();
-                customerArrearsData.information = data[informationComboBox.Text].ToString();
-                customerArrearsData.status = data[statusComboBox.Text].ToString();
+                customerArrearsData.daysInArrears = data[informationComboBox.Text].ToString();
+                customerArrearsData.dueDate = data[statusComboBox.Text].ToString();
                 customerArrearsData.ceiling = data[ceilingComboBox.Text].ToString();
                 customerArrearsData.totalPayment = data[totalPaymentComboBox.Text].ToString();
                 customerArrearsData.col = data[colComboBox.Text].ToString();
                 customerArrearsData.latitude = double.Parse(data[latitudeComboBox.Text].ToString());
                 customerArrearsData.longitude = double.Parse(data[longitudeComboBox.Text].ToString());
+                customerArrearsData.uid = data[numberIBAComboBox.Text].ToString();
+                customerArrearsData.linkGoogleMaps = data[linkGooglemapsComboBox.Text].ToString();
+
 
                 CustomerArrearsDataCollection.customerArrearsDatas.Add(customerArrearsData);
             }
@@ -147,7 +152,9 @@ namespace Remedial_BIRU.View.Forms
                 totalPaymentComboBox,
                 colComboBox,
                 latitudeComboBox,
-                longitudeComboBox
+                longitudeComboBox,
+                numberIBAComboBox,
+                linkGooglemapsComboBox
             };
 
             return comboBoxes;

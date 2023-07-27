@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Remedial_BIRU.DataCollections;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,7 +20,7 @@ namespace Remedial_BIRU.View.Forms
 
         private void visitButton_Click(object sender, EventArgs e)
         {
-            Form form = new TravelingSalesmanProblemForm();
+            Form form = new TravelingSalesmanProblemForm(CustomerArrearsDataCollection.customerArrearsDatas);
             form.Show();
         }
     }
