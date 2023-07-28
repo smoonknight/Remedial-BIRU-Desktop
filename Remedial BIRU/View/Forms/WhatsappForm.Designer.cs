@@ -32,19 +32,19 @@ namespace Remedial_BIRU.View.Forms
             this.components = new System.ComponentModel.Container();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.whatsappPictureBox = new System.Windows.Forms.PictureBox();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.beautifyPanel4 = new Remedial_BIRU.Template.CustomPanel.BeautifyPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.employeeNumberTextBox = new System.Windows.Forms.TextBox();
             this.commonLabel1 = new Remedial_BIRU.View.Labels.CommonLabel();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.beautifyPanel1 = new Remedial_BIRU.Template.CustomPanel.BeautifyPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.messageTextRichTextBox = new System.Windows.Forms.RichTextBox();
             this.counterCommonLabel = new Remedial_BIRU.View.Labels.CommonLabel();
             ((System.ComponentModel.ISupportInitialize)(this.whatsappPictureBox)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
             this.beautifyPanel4.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
             this.beautifyPanel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
@@ -62,6 +62,22 @@ namespace Remedial_BIRU.View.Forms
             this.whatsappPictureBox.TabStop = false;
             this.toolTip1.SetToolTip(this.whatsappPictureBox, "Kirim data ke whatsapp petugas");
             this.whatsappPictureBox.Click += new System.EventHandler(this.whatsappPictureBox_Click);
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 1;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Controls.Add(this.beautifyPanel4, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.beautifyPanel1, 0, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 450);
+            this.tableLayoutPanel1.TabIndex = 3;
             // 
             // beautifyPanel4
             // 
@@ -116,22 +132,6 @@ namespace Remedial_BIRU.View.Forms
             this.commonLabel1.TabIndex = 6;
             this.commonLabel1.Text = "Nomor Pegawai";
             this.commonLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.ColumnCount = 1;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.beautifyPanel4, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.beautifyPanel1, 0, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(800, 450);
-            this.tableLayoutPanel1.TabIndex = 3;
             // 
             // beautifyPanel1
             // 
@@ -191,14 +191,16 @@ namespace Remedial_BIRU.View.Forms
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(230)))), ((int)(((byte)(233)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.MinimumSize = new System.Drawing.Size(816, 489);
             this.Name = "WhatsappForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Whatsapp";
             this.Load += new System.EventHandler(this.WhatsappForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.whatsappPictureBox)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
             this.beautifyPanel4.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
-            this.tableLayoutPanel1.ResumeLayout(false);
             this.beautifyPanel1.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.ResumeLayout(false);

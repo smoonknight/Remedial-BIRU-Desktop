@@ -16,8 +16,8 @@ namespace Remedial_BIRU.Classes.Controllers
             string contactNumber = travelingSalesmanProblemData.customerArrearsData.contactNumber;
             string daysInArrears = travelingSalesmanProblemData.customerArrearsData.daysInArrears;
             string dueDate = travelingSalesmanProblemData.customerArrearsData.dueDate;
-            string ceiling = travelingSalesmanProblemData.customerArrearsData.ceiling;
-            string totalPayment = travelingSalesmanProblemData.customerArrearsData.totalPayment;
+            string ceiling = TextController.FormatRupiah(travelingSalesmanProblemData.customerArrearsData.ceiling);
+            string totalPayment = TextController.FormatRupiah(travelingSalesmanProblemData.customerArrearsData.totalPayment);
             string col = travelingSalesmanProblemData.customerArrearsData.col;
             string latitude = travelingSalesmanProblemData.customerArrearsData.latitude.ToString();
             string longitude = travelingSalesmanProblemData.customerArrearsData.longitude.ToString();
@@ -53,13 +53,15 @@ namespace Remedial_BIRU.Classes.Controllers
                 string routeNumber = $"Rute ke - {increment}";
                 string name = travelingSalesmanProblemData.customerArrearsData.name;
                 string address = travelingSalesmanProblemData.customerArrearsData.address;
-                string contactNumber = travelingSalesmanProblemData.customerArrearsData.contactNumber;
+                string contactNumber = (travelingSalesmanProblemData.customerArrearsData.contactNumber == "" ? "0" : travelingSalesmanProblemData.customerArrearsData.contactNumber);
+                string totalPayment = TextController.FormatRupiah(travelingSalesmanProblemData.customerArrearsData.totalPayment);
                 string whatsappNumber = (contactNumber.First() == '+' ? contactNumber : ConvertPhoneNumber(contactNumber, "+62"));
                 string latitude = travelingSalesmanProblemData.customerArrearsData.latitude.ToString();
                 string longitude = travelingSalesmanProblemData.customerArrearsData.longitude.ToString();
 
                 string textBuilder = $"Nama Nasahah : {name}\n" +
                               $"Alamat : {address}\n" +
+                              $"Total Tungakan : {totalPayment}\n" +
                               $"Whatsapp link : wa.me/{whatsappNumber}\n" +
                               $"{latitude}, {longitude}\n\n";
 
@@ -77,6 +79,20 @@ namespace Remedial_BIRU.Classes.Controllers
 
             string phoneNumberWithCountryCode = countryCode + basePhoneNumber;
             return phoneNumberWithCountryCode;
+        }
+
+        public static string FormatRupiah(int number)
+        {
+            return string.Format("Rp. {0:N0}", number);
+        }
+
+        public static string FormatRupiah(string number)
+        {
+            if (number == null)
+            {
+                return "Rp. 00";
+            }
+            return FormatRupiah(int.Parse(number));
         }
     }
 }

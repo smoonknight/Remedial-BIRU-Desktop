@@ -103,13 +103,24 @@
     <Compile Include="View\Forms\CustomerListForm.Designer.cs">
       <DependentUpon>CustomerListForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Forms\CustomerScheduleSelectorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Forms\CustomerScheduleSelectorForm.Designer.cs">
+      <DependentUpon>CustomerScheduleSelectorForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Forms\InputExcelForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\Forms\InputExcelForm.Designer.cs">
       <DependentUpon>InputExcelForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Classes\Controllers\PDFController.cs" />
+    <Compile Include="View\Forms\SelectWorksheetExcelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Forms\SelectWorksheetExcelForm.Designer.cs">
+      <DependentUpon>SelectWorksheetExcelForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Forms\TravelingSalesmanProblemForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -206,8 +217,14 @@
     <EmbeddedResource Include="View\Forms\CustomerDescriptionForm.resx">
       <DependentUpon>CustomerDescriptionForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\Forms\CustomerScheduleSelectorForm.resx">
+      <DependentUpon>CustomerScheduleSelectorForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Forms\InputExcelForm.resx">
       <DependentUpon>InputExcelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Forms\SelectWorksheetExcelForm.resx">
+      <DependentUpon>SelectWorksheetExcelForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Forms\TravelingSalesmanProblemForm.resx">
       <DependentUpon>TravelingSalesmanProblemForm.cs</DependentUpon>

@@ -66,6 +66,10 @@ namespace Remedial_BIRU.Classes.Algoritms
             double totalDistance = 0;
             for (int i = 0; i < route.Count - 1; i++)
             {
+                if (route[i].Latitude == 0)
+                {
+                    continue;
+                }
                 totalDistance += Haversine(route[i].Latitude, route[i].Longitude, route[i + 1].Latitude, route[i + 1].Longitude);
             }
             return totalDistance;

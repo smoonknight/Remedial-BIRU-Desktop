@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,8 +22,14 @@ namespace Remedial_BIRU
 
         private void inputDataExcelButton_Click(object sender, EventArgs e)
         {
-            Form form = new InputExcelForm();
-            form.Show();
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                string fileDirectory = openFileDialog1.FileName;
+
+                Form form = new SelectWorksheetExcelForm(fileDirectory);
+                form.Show();
+            }
+            
         }
     }
 }

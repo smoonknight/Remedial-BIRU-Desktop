@@ -31,8 +31,8 @@ namespace Remedial_BIRU.Classes.Controllers
                 duplicator.Bookmarks["contactNumber"].SetText(customerArrearsData.contactNumber);
                 duplicator.Bookmarks["daysInArrears"].SetText(customerArrearsData.daysInArrears);
                 duplicator.Bookmarks["dueDate"].SetText(customerArrearsData.dueDate);
-                duplicator.Bookmarks["ceiling"].SetText(customerArrearsData.ceiling);
-                duplicator.Bookmarks["totalPayment"].SetText(customerArrearsData.totalPayment);
+                duplicator.Bookmarks["ceiling"].SetText(TextController.FormatRupiah(customerArrearsData.ceiling));
+                duplicator.Bookmarks["totalPayment"].SetText(TextController.FormatRupiah(customerArrearsData.totalPayment));
                 duplicator.Bookmarks["col"].SetText(customerArrearsData.col);
                 duplicator.Bookmarks["uid"].SetText(customerArrearsData.uid);
                 duplicator.Bookmarks["latitude"].SetText(customerArrearsData.latitude.ToString());

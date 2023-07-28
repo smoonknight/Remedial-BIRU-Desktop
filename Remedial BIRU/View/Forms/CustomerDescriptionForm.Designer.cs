@@ -909,7 +909,9 @@ namespace Remedial_BIRU.View.Forms
             this.ClientSize = new System.Drawing.Size(784, 561);
             this.Controls.Add(this.tableLayoutPanel3);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.MinimumSize = new System.Drawing.Size(800, 600);
             this.Name = "CustomerDescriptionForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Data Nasabah";
             this.Load += new System.EventHandler(this.EmployeeDescriptionForm_Load);
             this.tableLayoutPanel2.ResumeLayout(false);

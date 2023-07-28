@@ -36,8 +36,8 @@ namespace Remedial_BIRU.View.Forms
             contactNumberCommonLabel.Text = customerArrearsData.contactNumber;
             informationCommonLabel.Text = customerArrearsData.daysInArrears;
             statusCommonLabel.Text = customerArrearsData.dueDate;
-            ceilingCommonLabel.Text = customerArrearsData.ceiling;
-            totalPaymentCommonLabel.Text = customerArrearsData.totalPayment;
+            ceilingCommonLabel.Text = TextController.FormatRupiah(customerArrearsData.ceiling);
+            totalPaymentCommonLabel.Text = TextController.FormatRupiah(customerArrearsData.totalPayment);
             colCommonLabel.Text = customerArrearsData.col;
             latitudeCommonLabel.Text = customerArrearsData.latitude.ToString();
             longitudeCommonLabel.Text = customerArrearsData.longitude.ToString();

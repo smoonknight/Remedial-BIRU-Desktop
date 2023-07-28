@@ -3,12 +3,12 @@
   "name": [ "nama" ],
   "address": [ "alamat" ],
   "contactNumber": [ "hp", "nomor hp", "nomor handphone" ],
-  "daysInArrears": [ "tgk hari" ],
+  "daysInArrears": [ "tgk hari", "hari tggk" ],
   "dueDate": [ "tglexp", "jatuh tempo", "due date" ],
-  "ceiling": [ "plafon" ],
+  "ceiling": [ "plafon", "mdlawal" ],
   "totalPayment": [ "total", "ttl tggkn" ],
   "col": [ "col" ],
   "latitude": [ "latitude" ],
   "longitude": [ "longitude" ],
-  "linkGoogleMaps": [ "linkGoogleMaps", "link google maps", "link gmaps", ]
+  "linkGoogleMaps": [ "linkGoogleMaps", "link google maps", "link gmaps", "pin maps" ]
 }

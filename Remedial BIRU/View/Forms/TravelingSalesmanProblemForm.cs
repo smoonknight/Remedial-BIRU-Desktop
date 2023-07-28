@@ -17,12 +17,12 @@ namespace Remedial_BIRU.View.Forms
 {
     public partial class TravelingSalesmanProblemForm : Form
     {
-        private List<CustomerArrearsData> customerArrearsDatas;
-        private List<TravelingSalesmanProblemData> shortestRoute;
+        private List<CustomerArrearsData> customerArrearsDatas = new List<CustomerArrearsData>();
+        private List<TravelingSalesmanProblemData> shortestRoute = new List<TravelingSalesmanProblemData>();
         public TravelingSalesmanProblemForm(List<CustomerArrearsData> datas)
         {
             InitializeComponent();
-            customerArrearsDatas = datas;
+            customerArrearsDatas = new List<CustomerArrearsData>(datas);
         }
 
         
@@ -97,7 +97,8 @@ namespace Remedial_BIRU.View.Forms
         {
             PictureBox pictureBox = sender as PictureBox;
             int index = int.Parse(pictureBox.Tag.ToString());
-            string message = TextController.MessageToEmployeeTravelingRoute(shortestRoute[index]);
+            TravelingSalesmanProblemData travelingSalesmanProblemData = shortestRoute[index];
+            string message = TextController.MessageToEmployeeTravelingRoute(travelingSalesmanProblemData);
 
             Form form = new WhatsappForm(message);
             form.ShowDialog();
@@ -110,23 +111,32 @@ namespace Remedial_BIRU.View.Forms
 
         private void whatsappPictureBox_Click(object sender, EventArgs e)
         {
-            string message = TextController.MessageToEmployeeTravelingRouteAllCustomer(shortestRoute);
+            List<TravelingSalesmanProblemData> travelingSalesmanProblemDatas = removeBankBiruRoute(shortestRoute);
+            string message = TextController.MessageToEmployeeTravelingRouteAllCustomer(travelingSalesmanProblemDatas);
 
             Form form = new WhatsappForm(message);
-            form.ShowDialog();
+            form.Show();
         }
 
         private void printPictureBox_Click(object sender, EventArgs e)
         {
             List<CustomerArrearsData> customerArrearsData = new List<CustomerArrearsData>();
-            shortestRoute.RemoveAt(0);
-            shortestRoute.RemoveAt(shortestRoute.Count - 1);
+            List<TravelingSalesmanProblemData> travelingSalesmanProblemDatas = removeBankBiruRoute(shortestRoute);
 
-            foreach (TravelingSalesmanProblemData travelingSalesmanProblemData in shortestRoute)
+            foreach (TravelingSalesmanProblemData travelingSalesmanProblemData in travelingSalesmanProblemDatas)
             {
                 customerArrearsData.Add(travelingSalesmanProblemData.customerArrearsData);
             }
             WordController.ConvertCustomerArrearsDataToWord(customerArrearsData);
+        }
+
+        private List<TravelingSalesmanProblemData> removeBankBiruRoute(List<TravelingSalesmanProblemData> data)
+        {
+            List<TravelingSalesmanProblemData> travelingSalesmanProblemDatas = new List<TravelingSalesmanProblemData>(data);
+            travelingSalesmanProblemDatas.RemoveAt(0);
+            travelingSalesmanProblemDatas.RemoveAt(travelingSalesmanProblemDatas.Count - 1);
+
+            return travelingSalesmanProblemDatas;
         }
     }
 }

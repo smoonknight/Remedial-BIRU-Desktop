@@ -32,7 +32,6 @@ namespace Remedial_BIRU.View.Forms
             this.components = new System.ComponentModel.Container();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.routeBeautifyPanel = new Remedial_BIRU.Template.CustomPanel.BeautifyPanel();
             this.beautifyPanel1 = new Remedial_BIRU.Template.CustomPanel.BeautifyPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.distanceCommonLabel = new Remedial_BIRU.View.Labels.CommonLabel();
@@ -45,6 +44,7 @@ namespace Remedial_BIRU.View.Forms
             this.beautifyPanel2 = new Remedial_BIRU.Template.CustomPanel.BeautifyPanel();
             this.commonLabel3 = new Remedial_BIRU.View.Labels.CommonLabel();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.routeBeautifyPanel = new Remedial_BIRU.Template.CustomPanel.BeautifyPanel();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.beautifyPanel1.SuspendLayout();
@@ -84,25 +84,12 @@ namespace Remedial_BIRU.View.Forms
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 80);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel3.MinimumSize = new System.Drawing.Size(800, 371);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel3.Size = new System.Drawing.Size(800, 371);
             this.tableLayoutPanel3.TabIndex = 8;
-            // 
-            // routeBeautifyPanel
-            // 
-            this.routeBeautifyPanel.AutoScroll = true;
-            this.routeBeautifyPanel.BackColor = System.Drawing.Color.White;
-            this.routeBeautifyPanel.BorderColor = System.Drawing.Color.Empty;
-            this.routeBeautifyPanel.BorderRadius = 30;
-            this.routeBeautifyPanel.BorderWidth = 3;
-            this.routeBeautifyPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.routeBeautifyPanel.Location = new System.Drawing.Point(280, 0);
-            this.routeBeautifyPanel.Margin = new System.Windows.Forms.Padding(0, 0, 33, 20);
-            this.routeBeautifyPanel.Name = "routeBeautifyPanel";
-            this.routeBeautifyPanel.Size = new System.Drawing.Size(487, 351);
-            this.routeBeautifyPanel.TabIndex = 2;
             // 
             // beautifyPanel1
             // 
@@ -249,6 +236,20 @@ namespace Remedial_BIRU.View.Forms
             this.commonLabel3.Text = "Jalur yang di sarankan";
             this.commonLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // routeBeautifyPanel
+            // 
+            this.routeBeautifyPanel.AutoScroll = true;
+            this.routeBeautifyPanel.BackColor = System.Drawing.Color.White;
+            this.routeBeautifyPanel.BorderColor = System.Drawing.Color.Empty;
+            this.routeBeautifyPanel.BorderRadius = 30;
+            this.routeBeautifyPanel.BorderWidth = 3;
+            this.routeBeautifyPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.routeBeautifyPanel.Location = new System.Drawing.Point(280, 0);
+            this.routeBeautifyPanel.Margin = new System.Windows.Forms.Padding(0, 0, 33, 20);
+            this.routeBeautifyPanel.Name = "routeBeautifyPanel";
+            this.routeBeautifyPanel.Size = new System.Drawing.Size(487, 351);
+            this.routeBeautifyPanel.TabIndex = 4;
+            // 
             // TravelingSalesmanProblemForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -257,6 +258,7 @@ namespace Remedial_BIRU.View.Forms
             this.ClientSize = new System.Drawing.Size(800, 511);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "TravelingSalesmanProblemForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Rute";
             this.Load += new System.EventHandler(this.TravelingSalesmanProblemForm_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -284,11 +286,11 @@ namespace Remedial_BIRU.View.Forms
         private System.Windows.Forms.PictureBox printPictureBox;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private Remedial_BIRU.Template.CustomPanel.BeautifyPanel routeBeautifyPanel;
         private Remedial_BIRU.Template.CustomPanel.BeautifyPanel beautifyPanel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private Labels.CommonLabel distanceCommonLabel;
         private Labels.CommonLabel commonLabel1;
         private System.Windows.Forms.PictureBox whatsappPictureBox;
+        private Remedial_BIRU.Template.CustomPanel.BeautifyPanel routeBeautifyPanel;
     }
 }

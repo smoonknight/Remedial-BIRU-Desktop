@@ -47,7 +47,7 @@ namespace Remedial_BIRU.View.Forms
             this.headerPanel.Location = new System.Drawing.Point(0, 0);
             this.headerPanel.Margin = new System.Windows.Forms.Padding(0);
             this.headerPanel.Name = "headerPanel";
-            this.headerPanel.Size = new System.Drawing.Size(784, 44);
+            this.headerPanel.Size = new System.Drawing.Size(884, 44);
             this.headerPanel.TabIndex = 2;
             // 
             // headerTableLayoutPanel
@@ -71,7 +71,7 @@ namespace Remedial_BIRU.View.Forms
             this.headerTableLayoutPanel.Name = "headerTableLayoutPanel";
             this.headerTableLayoutPanel.RowCount = 1;
             this.headerTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.headerTableLayoutPanel.Size = new System.Drawing.Size(784, 44);
+            this.headerTableLayoutPanel.Size = new System.Drawing.Size(884, 44);
             this.headerTableLayoutPanel.TabIndex = 4;
             // 
             // label1
@@ -106,18 +106,19 @@ namespace Remedial_BIRU.View.Forms
             this.customerListUserControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.customerListUserControl1.Location = new System.Drawing.Point(0, 44);
             this.customerListUserControl1.Name = "customerListUserControl1";
-            this.customerListUserControl1.Size = new System.Drawing.Size(784, 517);
+            this.customerListUserControl1.Size = new System.Drawing.Size(884, 517);
             this.customerListUserControl1.TabIndex = 0;
             // 
             // CustomerListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 561);
+            this.ClientSize = new System.Drawing.Size(884, 561);
             this.Controls.Add(this.customerListUserControl1);
             this.Controls.Add(this.headerPanel);
             this.MinimumSize = new System.Drawing.Size(800, 600);
             this.Name = "CustomerListForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Remedial BIRU";
             this.headerPanel.ResumeLayout(false);
             this.headerTableLayoutPanel.ResumeLayout(false);

@@ -18,6 +18,7 @@ namespace Remedial_BIRU.View.Forms
     {
         List<string> dataTableList = new List<string>();
         DataTable dataTable;
+        string worksheetName;
 
         struct customerArrearsAndComboBoxes
         {
@@ -33,15 +34,16 @@ namespace Remedial_BIRU.View.Forms
         
         string path;
 
-        public InputExcelForm(string directory = @"D:\debug.xlsx")
+        public InputExcelForm(string directory, string nameOfWorksheet)
         {
             InitializeComponent();
             path = directory;
+            worksheetName = nameOfWorksheet;
         }
 
         private async void InputExcelForm_Load(object sender, EventArgs e)
         {
-            dataTable = await DataTableController.ExcelToDataTable(path);
+            dataTable = await DataTableController.ExcelToDataTable(path, worksheetName);
             customerDataGridView.DataSource = dataTable;
 
             foreach (DataColumn dataColumn in dataTable.Columns)
@@ -117,7 +119,14 @@ namespace Remedial_BIRU.View.Forms
             CustomerArrearsDataCollection.customerArrearsDatas.Clear();
             foreach (DataRow data in dataTable.Rows)
             {
+                string latitude = (data[latitudeComboBox.Text].ToString() == "" ? "0" : data[latitudeComboBox.Text].ToString());
+                string longitude = (data[longitudeComboBox.Text].ToString() == "" ? "0" : data[longitudeComboBox.Text].ToString());
+                
                 CustomerArrearsData customerArrearsData = new CustomerArrearsData();
+                if (data[nameComboBox.Text].ToString() == "")
+                {
+                    break;
+                }
                 customerArrearsData.name = data[nameComboBox.Text].ToString();
                 customerArrearsData.address = data[addressComboBox.Text].ToString();
                 customerArrearsData.contactNumber = data[contactNumberComboBox.Text].ToString();
@@ -126,17 +135,17 @@ namespace Remedial_BIRU.View.Forms
                 customerArrearsData.ceiling = data[ceilingComboBox.Text].ToString();
                 customerArrearsData.totalPayment = data[totalPaymentComboBox.Text].ToString();
                 customerArrearsData.col = data[colComboBox.Text].ToString();
-                customerArrearsData.latitude = double.Parse(data[latitudeComboBox.Text].ToString());
-                customerArrearsData.longitude = double.Parse(data[longitudeComboBox.Text].ToString());
+                customerArrearsData.latitude = double.Parse(latitude);
+                customerArrearsData.longitude = double.Parse(longitude);
                 customerArrearsData.uid = data[numberIBAComboBox.Text].ToString();
                 customerArrearsData.linkGoogleMaps = data[linkGooglemapsComboBox.Text].ToString();
-
 
                 CustomerArrearsDataCollection.customerArrearsDatas.Add(customerArrearsData);
             }
 
             Form form = new CustomerListForm();
             form.Show();
+            this.Dispose();
         }
 
         private List<ComboBox> addComboBoxUsage()
@@ -158,6 +167,11 @@ namespace Remedial_BIRU.View.Forms
             };
 
             return comboBoxes;
+        }
+
+        private void SetWorksheetComboBox()
+        {
+            
         }
     }
 }
